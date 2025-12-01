@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Allroundgothic;
+  src: url("../fonts/All-Round-Gothic/Allroundgothic-bold.otf");
+}
+
+@font-face {
+  font-family: Nohemi;
+  src: url("../fonts/Nohemi-Font/Nohemi-Regular-BF6438cc4d0e493.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  padding-top: 90px;
+  font-family: Nohemi;
+  height: 10000px;
+}
