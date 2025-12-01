@@ -4,7 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scripts.js" type="module" defer></script>
     <title>Coe Café | Cardápio</title>
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img
+          src="../img/Gemini_Generated_Image_mjvo9vmjvo9vmjvo-removebg-preview 1.png"
+          alt="logo"
+        />
+      </div>
+
+      <button class="menu-btn" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="menu">
+        <a href="#">Inicio</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Pedido Online</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+
+    <!-- Cardápio -->
+    <main>
+      <div class="titulo-central">
+        <h1>Nosso Menu</h1>
+        <p>Seleção premium de cafés, bebidas e acompanhamentos artesanais</p>
+      </div>
+
+      <!-- MENU DE CATEGORIAS -->
+      <nav class="categorias">
+        <div class="container-Cat">
+          <button data-cat="cafes-especiais" class="ativo">
+            Cafés Especiais
+          </button>
+          <button data-cat="tradicionais">Tradicionais</button>
+          <button data-cat="bebidas-geladas">Bebidas Geladas</button>
+          <button data-cat="chas">Chás</button>
+          <button data-cat="lanches">Lanches</button>
+          <button data-cat="sobremesas">Sobremesas</button>
+        </div>
+      </nav>
+      <!-- ÁREA DOS CARDS -->
+      <section id="lista-produtos" class="grid"></section>
+    </main>
+  </body>
 </html>

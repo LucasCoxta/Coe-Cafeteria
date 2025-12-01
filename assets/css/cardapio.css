@@ -1,0 +1,76 @@
+body {
+  background-color: var(--cor-secundaria);
+}
+
+main {
+  padding: 0 220px;
+}
+
+/* TITULO PRINCIPAL DA PÁGINA */
+.titulo-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 4rem 0;
+}
+
+.titulo-central h1,
+p {
+  color: var(--cor-primaria);
+}
+
+.titulo-central h1 {
+  font-family: Allroundgothic;
+  font-size: 62px;
+  text-align: center;
+}
+
+.titulo-central p {
+  font-size: 22px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+/* MENU DE CATEGORIAS */
+
+.categorias {
+  background: #fafafa;
+  padding: 5px 5px;
+  border-radius: 15px;
+  border: 1px solid #b6c536;
+  width: 905px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container-Cat {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.container-Cat button {
+  background: transparent;
+  border: none;
+  width: 145px;
+  height: 37px;
+  font-size: 14px;
+  color: #6b7a75;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.container-Cat button.ativo {
+  background: var(--cor-acento);
+  color: var(--cor-primaria);
+  font-weight: 00;
+}
+
+/* Hover leve */
+.container-Cat button:hover {
+  opacity: 0.7;
+}
