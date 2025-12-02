@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    background-color: #FFEDD3;
+    color: #333;
+  }
+  
+  /* -------------------------
+     HEADER
+  --------------------------*/
+  header.nav {
+    background-color: #09372B;
+    color: #fff;
+    padding: 40px 30px;
+    text-align: center;
+  }
+  
+  header.nav nav {
+    margin-bottom: 20px;
+  }
+  
+  header.nav nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  header.nav nav a:hover {
+    opacity: 0.75;
+  }
+  
+  header.nav h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  
+  header.nav p {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+  
+  /* -------------------------
+     SEÇÃO SOBRE
+  --------------------------*/
+  section.Sobre {
+    padding: 60px 80px;
+    background-color: #FFEDD3;
+  }
+  
+  .cards1 {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .cards1 h1 {
+    color: #09372B;
+    font-size: 28px;
+    margin: 30px 0 10px 0;
+  }
+  
+  .cards1 p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .historia,
+  .nossaMissao {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .historia{
+    background-image:url(../img/maquina\ de\ cafe.png) ;
+  }
+
+  .nossaMissao {
+    background-image:url(../img/barista.png) ;
+  }
+
+  /* -------------------------
+     SEÇÃO VALORES
+  --------------------------*/
+  section.Valores {
+    background-color: #09372B;
+    padding: 60px 80px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  section.Valores h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  section.Valores p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  section.Valores > div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  section.Valores > div > div {
+    background-color: #FFEDD3;
+    color: #333;
+    width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+  }
+  
+  section.Valores > div > div h1 {
+    font-size: 22px;
+    color: #09372B;
+    margin-bottom: 10px;
+  }
+  
+  section.Valores > div > div p {
+    font-size: 15px;
+  }
+  
+  /* -------------------------
+     SEÇÃO EQUIPE
+  --------------------------*/
+  section.Equipe {
+    padding: 60px 80px;
+    text-align: center;
+    background-color: #FFEDD3;
+  }
+  
+  section.Equipe h1 {
+    color: var(--cor-acento);
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  section.Equipe p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  /* -------------------------
+     FOOTER
+  --------------------------*/
+  .footer-container {
+    background-color: #1e1e1e;
+    color: #ccc;
+    padding: 50px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .mini-footer {
+    width: 22%;
+    min-width: 220px;
+    margin-bottom: 20px;
+  }
+  
+  .mini-footer h2 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .mini-footer a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+  }
+  
+  .mini-footer a:hover {
+    color: #fff;
+  }
+  
+  .footer-container p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.7;
+  }
+  
+  /* -------------------------
+     RESPONSIVIDADE
+  --------------------------*/
+  @media (max-width: 768px) {
+    header.nav h1 {
+      font-size: 28px;
+    }
+  
+    section.Valores > div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  }
