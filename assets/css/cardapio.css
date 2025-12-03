@@ -33,7 +33,6 @@ p {
 }
 
 /* MENU DE CATEGORIAS */
-
 .categorias {
   background: #fafafa;
   padding: 5px 5px;
@@ -73,4 +72,70 @@ p {
 /* Hover leve */
 .container-Cat button:hover {
   opacity: 0.7;
+}
+
+/* ===  CARDS === */
+/* GRID PRINCIPAL */
+#lista-produtos.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.card-cardapio {
+  height: 331px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.card-cardapio:hover {
+  transform: translateY(-5px);
+}
+
+.card-cardapio img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-cardapio .info-cardapio {
+  background: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 190px;
+}
+
+.card-cardapio .info-cardapio h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  font-family: Allroundgothic;
+}
+
+.card-cardapio .info-cardapio p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  color: var(--cor-secundaria);
+  opacity: 0.75;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.card-cardapio .info-cardapio .preco-cardapio {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  margin-top: 4px;
+  opacity: 1;
 }
