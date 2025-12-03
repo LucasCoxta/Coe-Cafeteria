@@ -1,0 +1,306 @@
+{
+  "cafes-especiais": [
+    {
+      "nome": "Cold Brew",
+      "descricao": "Café extraído a frio por 18 horas, suave e encorpado.",
+      "preco": "14.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Affogato",
+      "descricao": "Café expresso servido sobre uma bola de sorvete.",
+      "preco": "16.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Flat White",
+      "descricao": "Café forte com leite vaporizado delicado.",
+      "preco": "13.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Café Vienense",
+      "descricao": "Expresso com chantilly cremoso.",
+      "preco": "15.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Irish Coffee",
+      "descricao": "Café com um toque de whisky e creme.",
+      "preco": "18.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Café Caramelo Salgado",
+      "descricao": "Expresso com creme de leite e calda de caramelo salgado.",
+      "preco": "16.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Latte de Baunilha",
+      "descricao": "Café com leite vaporizado e essência artesanal de baunilha.",
+      "preco": "14.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Café Tônico",
+      "descricao": "Expresso servido sobre água tônica com gelo, refrescante e aromático.",
+      "preco": "15.00",
+      "imagem": "https://via.placeholder.com/150"
+    }
+  ],
+  "tradicionais": [
+    {
+      "nome": "Café Expresso",
+      "descricao": "Café expresso forte e encorpado.",
+      "preco": "6.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Café Coado",
+      "descricao": "Café tradicional coado na hora.",
+      "preco": "5.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Pingado",
+      "descricao": "Café com um toque de leite.",
+      "preco": "6.50",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Cappuccino",
+      "descricao": "Café com leite vaporizado e espuma cremosa.",
+      "preco": "10.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Mocha",
+      "descricao": "Cappuccino com calda de chocolate.",
+      "preco": "12.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Macchiato",
+      "descricao": "Expresso com uma pequena camada de espuma.",
+      "preco": "8.50",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Latte",
+      "descricao": "Café expresso com leite vaporizado.",
+      "preco": "9.50",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Café com Leite",
+      "descricao": "Mistura clássica de café e leite.",
+      "preco": "7.00",
+      "imagem": "https://via.placeholder.com/150"
+    }
+  ],
+
+  "bebidas-geladas": [
+    {
+      "nome": "Iced Coffee",
+      "descricao": "Café gelado refrescante.",
+      "preco": "10.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Frapuccino",
+      "descricao": "Bebida gelada cremosa com café.",
+      "preco": "14.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Iced Latte",
+      "descricao": "Café expresso com leite gelado.",
+      "preco": "11.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Café Gelado com Baunilha",
+      "descricao": "Café gelado com toque de baunilha.",
+      "preco": "12.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chocolate Gelado",
+      "descricao": "Bebida gelada de chocolate cremoso.",
+      "preco": "13.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Matcha Gelado",
+      "descricao": "Chá verde japonês gelado com leite.",
+      "preco": "15.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chá Gelado de Limão",
+      "descricao": "Chá preto gelado com limão.",
+      "preco": "9.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chá Gelado de Pêssego",
+      "descricao": "Chá gelado sabor pêssego.",
+      "preco": "9.00",
+      "imagem": "https://via.placeholder.com/150"
+    }
+  ],
+
+  "chas": [
+    {
+      "nome": "Chá de Camomila",
+      "descricao": "Chá suave de camomila.",
+      "preco": "7.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chá de Hortelã",
+      "descricao": "Chá refrescante de hortelã.",
+      "preco": "7.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chá Preto",
+      "descricao": "Chá tradicional encorpado.",
+      "preco": "8.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chá Verde",
+      "descricao": "Chá leve e aromático.",
+      "preco": "9.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chá de Frutas Vermelhas",
+      "descricao": "Infusão aromática de frutas.",
+      "preco": "10.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chá de Gengibre",
+      "descricao": "Chá quente com sabor intenso.",
+      "preco": "9.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chá de Maçã",
+      "descricao": "Infusão de maçã doce e suave.",
+      "preco": "8.50",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Chá de Capim-Limão",
+      "descricao": "Chá aromático e relaxante.",
+      "preco": "8.00",
+      "imagem": "https://via.placeholder.com/150"
+    }
+  ],
+
+  "lanches": [
+    {
+      "nome": "Pão de Queijo",
+      "descricao": "Tradicional pão de queijo mineiro.",
+      "preco": "6.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Misto Quente",
+      "descricao": "Pão com queijo e presunto quentinho.",
+      "preco": "10.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Croissant",
+      "descricao": "Croissant amanteigado e macio.",
+      "preco": "8.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Bauru",
+      "descricao": "Sanduíche clássico com queijo, presunto e tomate.",
+      "preco": "12.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Torrada com Manteiga",
+      "descricao": "Pão tostado com manteiga.",
+      "preco": "5.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Empada de Frango",
+      "descricao": "Empadinha cremosa de frango.",
+      "preco": "7.50",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Quiche de Alho-Poró",
+      "descricao": "Quiche leve e saborosa.",
+      "preco": "11.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Sanduíche Natural",
+      "descricao": "Peito de peru, alface e cenoura.",
+      "preco": "10.00",
+      "imagem": "https://via.placeholder.com/150"
+    }
+  ],
+
+  "sobremesas": [
+    {
+      "nome": "Bolo de Chocolate",
+      "descricao": "Fatia de bolo macio com chocolate.",
+      "preco": "9.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Brownie",
+      "descricao": "Brownie denso e chocolatoso.",
+      "preco": "8.50",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Cookie",
+      "descricao": "Cookie crocante com gotas de chocolate.",
+      "preco": "6.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Torta de Limão",
+      "descricao": "Torta refrescante e cremosa.",
+      "preco": "10.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Pudim",
+      "descricao": "Pudim tradicional de leite condensado.",
+      "preco": "8.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Cheesecake",
+      "descricao": "Cheesecake com calda de frutas vermelhas.",
+      "preco": "12.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Torta de Maçã",
+      "descricao": "Clássica torta de maçã assada.",
+      "preco": "10.00",
+      "imagem": "https://via.placeholder.com/150"
+    },
+    {
+      "nome": "Gelato",
+      "descricao": "Sorvete italiano artesanal.",
+      "preco": "9.50",
+      "imagem": "https://via.placeholder.com/150"
+    }
+  ]
+}
