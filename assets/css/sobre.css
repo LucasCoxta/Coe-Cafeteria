@@ -1,51 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-  }
-  
   body {
     background-color: var(--cor-secundaria);
     color: #333;
   }
-  
-  /* -------------------------
-     HEADER
-  --------------------------*/
-  header.nav {
-    background-color: var(--cor-primaria);
-    color: #fff;
-    padding: 40px 30px;
-    text-align: center;
-  }
-  
-  header.nav nav {
-    margin-bottom: 20px;
-  }
-  
-  header.nav nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    transition: 0.3s;
-  }
-  
-  header.nav nav a:hover {
-    opacity: 0.75;
-  }
-  
-  header.nav h1 {
-    font-size: 36px;
-    margin-bottom: 8px;
-  }
-  
-  header.nav p {
-    font-size: 18px;
-    opacity: 0.9;
-  }
-  
+    
   /* -------------------------
      SEÇÃO SOBRE
   --------------------------*/
