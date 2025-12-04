@@ -1,0 +1,132 @@
+    /* RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #f5e9d5;
+        color: #1a1a1a;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+        background-color: #073b2d;
+        color: white;
+        padding: 20px;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    header nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* ===== MAIN ===== */
+    main {
+        padding: 40px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    section {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    section p {
+        color: #444;
+        margin-bottom: 25px;
+    }
+
+    /* ===== CARDS ===== */
+    .cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 12px;
+        width: 300px;
+        padding: 15px;
+        text-align: left;
+        transition: 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .card h3 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .card button {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        background-color: #0a8f3c;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    /* ===== OUTRAS FORMAS DE PEDIR ===== */
+    .formas {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .forma-item {
+        background: white;
+        width: 280px;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .forma-item span {
+        background-color: #ececec;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .forma-item a {
+        text-decoration: none;
+        font-size: 22px;
+        color: #1a1a1a;
+        margin-left: auto;
+    }
