@@ -1,174 +1,109 @@
-  body {
-    background-color: var(--cor-secundaria);
-    color: #333;
-  }
-    
-  /* -------------------------
+body {
+  background-color: var(--cor-secundaria);
+  color: #333;
+}
+
+/* -------------------------
      SEÇÃO SOBRE
   --------------------------*/
-  section.Sobre {
-    padding: 60px 80px;
-    background-color: var(--cor-secundaria);
-  }
-  
-  .cards1 {
-    max-width: 900px;
-    margin: auto;
-    
-  }
-  
-  .cards1 h1 {
-    color: var(--cor-primaria);
-    font-size: 28px;
-    margin: 30px 0 10px 0;
-    
-  }
-  
-  .cards1 p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    line-height: 1.6;
-    
-  }
-  
-  .Nossahistoria,
-  .nossaMissao {
-    width: 100%;
-    height: 250px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-  }
+section.Sobre {
+  padding: 60px 80px;
+  background-color: var(--cor-secundaria);
+}
 
-  .Nossahistoria{
-    background-image:url(../img/maquina\ de\ cafe.png) ;
-   
-  }
+.cards1 {
+  max-width: 900px;
+  margin: auto;
+}
 
-  .nossaMissao {
-    background-image:url(../img/barista.png) ;
-  }
+.cards1 h1 {
+  color: var(--cor-primaria);
+  font-size: 28px;
+  margin: 30px 0 10px 0;
+}
 
-  /* -------------------------
+.cards1 p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.Nossahistoria,
+.nossaMissao {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.Nossahistoria {
+  background-image: url(../img/maquina\ de\ cafe.png);
+}
+
+.nossaMissao {
+  background-image: url(../img/barista.png);
+}
+
+/* -------------------------
      SEÇÃO VALORES
   --------------------------*/
-  section.Valores {
-    background-color: var(--cor-primaria);
-    padding: 60px 80px;
-    text-align: center;
-    color: #fff;
-  }
-  
-  section.Valores h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  section.Valores p {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-  
-  section.Valores > div {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  section.Valores > div > div {
-    background-color: var(--cor-secundaria);
-    color: #333;
-    width: 250px;
-    padding: 25px;
-    border-radius: 12px;
-  }
-  
-  section.Valores > div > div h1 {
-    font-size: 22px;
-    color: var(--cor-primaria);
-    margin-bottom: 10px;
-  }
-  
-  section.Valores > div > div p {
-    font-size: 15px;
-  }
-  
-  /* -------------------------
+section.Valores {
+  background-color: var(--cor-primaria);
+  padding: 60px 80px;
+  text-align: center;
+  color: #fff;
+}
+
+section.Valores h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+section.Valores p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+section.Valores > div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+section.Valores > div > div {
+  background-color: var(--cor-secundaria);
+  color: #333;
+  width: 250px;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+section.Valores > div > div h1 {
+  font-size: 22px;
+  color: var(--cor-primaria);
+  margin-bottom: 10px;
+}
+
+section.Valores > div > div p {
+  font-size: 15px;
+}
+
+/* -------------------------
      SEÇÃO EQUIPE
   --------------------------*/
-  section.Equipe {
-    padding: 60px 80px;
-    text-align: center;
-    background-color: var(--cor-secundaria);
-  }
-  
-  section.Equipe h1 {
-    color: var(--cor-primaria);
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  section.Equipe p {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-  
-  /* -------------------------
-     FOOTER
-  --------------------------*/
-  .footer-container {
-    background-color: #1e1e1e;
-    color: #ccc;
-    padding: 50px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .mini-footer {
-    width: 22%;
-    min-width: 220px;
-    margin-bottom: 20px;
-  }
-  
-  .mini-footer h2 {
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .mini-footer a {
-    display: block;
-    color: #ccc;
-    text-decoration: none;
-    margin-bottom: 8px;
-    transition: 0.3s;
-  }
-  
-  .mini-footer a:hover {
-    color: #fff;
-  }
-  
-  .footer-container p {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    opacity: 0.7;
-  }
-  
-  /* -------------------------
-     RESPONSIVIDADE
-  --------------------------*/
-  @media (max-width: 768px) {
-    header.nav h1 {
-      font-size: 28px;
-    }
-  
-    section.Valores > div {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    footer {
-      text-align: center;
-    }
-  }
-  
+section.Equipe {
+  padding: 60px 80px;
+  text-align: center;
+  background-color: var(--cor-secundaria);
+}
+
+section.Equipe h1 {
+  color: var(--cor-primaria);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+section.Equipe p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}

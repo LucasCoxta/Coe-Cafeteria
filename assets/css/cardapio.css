@@ -6,7 +6,6 @@ main {
   padding: 0 220px;
 }
 
-/* TITULO PRINCIPAL DA PÁGINA */
 .titulo-central {
   display: flex;
   flex-direction: column;
@@ -32,20 +31,33 @@ p {
   text-align: center;
 }
 
-/* MENU DE CATEGORIAS */
 .categorias {
   background: #fafafa;
   padding: 5px 5px;
   border-radius: 15px;
   border: 1px solid #b6c536;
-  width: 905px;
+  width: 100%;
+  max-width: 910px;
   display: flex;
   align-items: center;
   margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+}
+
+.categorias::-webkit-scrollbar {
+  height: 6px;
+}
+
+.categorias::-webkit-scrollbar-thumb {
+  background: #b6c536;
+  border-radius: 10px;
 }
 
 .container-Cat {
-  display: flex;
+  display: inline-flex;
   gap: 5px;
   align-items: center;
 }
@@ -53,12 +65,13 @@ p {
 .container-Cat button {
   background: transparent;
   border: none;
+  flex: 0 0 auto;
   width: 145px;
   height: 37px;
-  font-size: 14px;
-  color: #6b7a75;
   padding: 10px 16px;
   border-radius: 10px;
+  font-size: 14px;
+  color: #6b7a75;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -66,16 +79,13 @@ p {
 .container-Cat button.ativo {
   background: var(--cor-acento);
   color: var(--cor-primaria);
-  font-weight: 00;
+  font-weight: 700;
 }
 
-/* Hover leve */
 .container-Cat button:hover {
   opacity: 0.7;
 }
 
-/* ===  CARDS === */
-/* GRID PRINCIPAL */
 #lista-produtos.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
@@ -126,7 +136,6 @@ p {
 .card-cardapio .info-cardapio p {
   font-size: 0.9rem;
   line-height: 1.3rem;
-  color: var(--cor-secundaria);
   opacity: 0.75;
   margin: 0;
   flex-grow: 1;
@@ -135,7 +144,111 @@ p {
 .card-cardapio .info-cardapio .preco-cardapio {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--cor-secundaria);
-  margin-top: 4px;
   opacity: 1;
+  margin-top: 4px;
+}
+
+@media (max-width: 1400px) {
+  main {
+    padding: 0 140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  main {
+    padding: 0 60px;
+  }
+
+  .titulo-central h1 {
+    font-size: 48px;
+  }
+
+  .titulo-central p {
+    font-size: 18px;
+  }
+
+  .container-Cat button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  #lista-produtos.grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 25px;
+    margin-top: 90px;
+  }
+
+  .titulo-central {
+    padding: 3rem 0;
+  }
+
+  .titulo-central h1 {
+    font-size: 38px;
+  }
+
+  .titulo-central p {
+    font-size: 16px;
+  }
+
+  #lista-produtos.grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+
+  .card-cardapio img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding: 0 15px;
+    margin-top: 85px;
+  }
+
+  .titulo-central {
+    padding: 2.5rem 0;
+  }
+
+  .titulo-central h1 {
+    font-size: 30px;
+  }
+
+  .titulo-central p {
+    font-size: 15px;
+  }
+
+  #lista-produtos.grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 15px 0;
+  }
+
+  .card-cardapio img {
+    height: 150px;
+  }
+
+  .card-cardapio .info-cardapio h3 {
+    font-size: 0.95rem;
+  }
+
+  .card-cardapio .info-cardapio p {
+    font-size: 0.85rem;
+  }
+
+  .card-cardapio .info-cardapio .preco-cardapio {
+    font-size: 1.1rem;
+  }
 }
