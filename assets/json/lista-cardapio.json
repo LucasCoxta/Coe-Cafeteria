@@ -4,19 +4,13 @@
       "nome": "Cold Brew",
       "descricao": "Café extraído a frio por 18 horas, suave e encorpado.",
       "preco": "14.00",
-      "imagem": "../img/cardapio/cold-brew.jpg"
-    },
-    {
-      "nome": "Affogato",
-      "descricao": "Café expresso servido sobre uma bola de sorvete.",
-      "preco": "16.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cold-brew.webp"
     },
     {
       "nome": "Flat White",
       "descricao": "Café forte com leite vaporizado delicado.",
       "preco": "13.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/flat-white.webp"
     },
     {
       "nome": "Café Vienense",

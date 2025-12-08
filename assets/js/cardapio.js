@@ -1,53 +1,71 @@
+import { addToCart } from "./carrinho.js";
+
 let dadosCardapio = {};
 
 export function initCardapio() {
-  const botoes = document.querySelectorAll(".container-Cat button");
   const container = document.getElementById("lista-produtos");
+  const botoes = document.querySelectorAll(".container-Cat button");
 
-  // 1. Carregar o JSON
   fetch("../json/lista-cardapio.json")
-    .then((response) => response.json())
+    .then((res) => res.json())
     .then((data) => {
       dadosCardapio = data;
-      renderizarCategoria("cafes-especiais");
-    })
-    .catch((error) => console.log("Erro ao carregar o cardápio:", error));
+      renderizarCategoria(Object.keys(data)[0]);
+    });
 
-  // 2. Evento de clique nos filtros
   botoes.forEach((btn) => {
     btn.addEventListener("click", () => {
       document
         .querySelector(".container-Cat .ativo")
         ?.classList.remove("ativo");
       btn.classList.add("ativo");
-
-      const categoria = btn.getAttribute("data-cat");
-      console.log("Categoria selecionada:", categoria);
-
-      renderizarCategoria(categoria);
+      renderizarCategoria(btn.dataset.cat);
     });
   });
 
-  // 3. Função que renderiza uma categoria específica
   function renderizarCategoria(cat) {
-    container.innerHTML = ""; // limpa antes de renderizar
+    container.innerHTML = "";
 
     if (!dadosCardapio[cat]) {
       container.innerHTML = "<p>Nenhum item encontrado.</p>";
       return;
     }
 
-    dadosCardapio[cat].forEach((item) => {
+    dadosCardapio[cat].forEach((item, i) => {
+      const id = `${cat}-${i}`;
+
       container.innerHTML += `
         <div class="card-cardapio">
           <img src="${item.imagem}" alt="${item.nome}">
           <div class="info-cardapio">
             <h3>${item.nome}</h3>
             <p>${item.descricao}</p>
-            <p class="preco-cardapio">R$ ${item.preco}</p>
+              <span class="preco-cardapio">R$ ${item.preco}</span>
+              <button
+                class="btn-add-cart"
+                data-id="${id}"
+                data-nome="${item.nome}"
+                data-preco="${item.preco}"
+                data-img="${item.imagem}"
+              >
+                Fazer pedido <i class="fa-solid fa-plus"></i>
+              </button>
           </div>
         </div>
       `;
+    });
+
+    document.querySelectorAll(".btn-add-cart").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        const el = e.currentTarget;
+
+        addToCart({
+          id: el.dataset.id,
+          nome: el.dataset.nome,
+          preco: Number(el.dataset.preco),
+          imagem: el.dataset.img,
+        });
+      });
     });
   }
 }
