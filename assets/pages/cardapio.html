@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
     <title>Coe Café | Cardápio</title>
   </head>
   <body>
@@ -34,6 +35,23 @@
         <a href="pedido.html">Pedido Online</a>
         <a href="#">Contato</a>
       </nav>
+
+      <div class="cart-icon" id="cartBtn"><span id="cartCount">0</span></div>
+      <div class="cart-overlay" id="cartOverlay">
+        <aside class="cart">
+          <h3>Meus pedidos</h3>
+          <button id="closeCart">✕</button>
+
+          <div class="cart-items" id="cartItems"></div>
+
+          <div class="cart-footer">
+            <p>
+              Total: <strong>R$ <span id="cartTotal">0.00</span></strong>
+            </p>
+            <button class="btn-primary">Solicitar Pedido</button>
+          </div>
+        </aside>
+      </div>
     </header>
 
     <!-- Cardápio -->

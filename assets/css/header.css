@@ -9,15 +9,9 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 998;
   transition: 0.4s;
   border-bottom: 1px solid transparent;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 1px;
 }
 
 .nav {
@@ -57,6 +51,19 @@ header {
   background: #fff;
   margin: 6px 0;
   transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--cor-acento) !important;
+  border-color: var(--cor-acento) !important;
+}
+
+.btn-primary:hover {
+  opacity: 0.75 !important;
+}
+
+.fa-cart-shopping {
+  color: var(--cor-primaria);
 }
 
 @media (max-width: 1100px) {
