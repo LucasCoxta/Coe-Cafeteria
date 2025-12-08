@@ -34,25 +34,47 @@
         <a href="sobre.html">Sobre Nós</a>
         <a href="pedido.html">Pedido Online</a>
         <a href="#">Contato</a>
+
+        <div class="cart-mobile">
+          <div class="cart-wrapper" id="cartBtn" title="Ver pedido">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-badge" id="cartCount">0</span>
+          </div>
+        </div>
       </nav>
 
-      <div class="cart-icon" id="cartBtn"><span id="cartCount">0</span></div>
-      <div class="cart-overlay" id="cartOverlay">
-        <aside class="cart">
-          <h3>Meus pedidos</h3>
-          <button id="closeCart">✕</button>
-
-          <div class="cart-items" id="cartItems"></div>
-
-          <div class="cart-footer">
-            <p>
-              Total: <strong>R$ <span id="cartTotal">0.00</span></strong>
-            </p>
-            <button class="btn-primary">Solicitar Pedido</button>
-          </div>
-        </aside>
+      <div class="cart-desktop">
+        <div class="cart-wrapper" id="cartBtnDesktop" title="Ver pedido">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartCountDesktop">0</span>
+        </div>
       </div>
     </header>
+
+    <div class="cart-overlay" id="cartOverlay">
+      <aside class="cart">
+        <div class="cart-header">
+          <h3>Meus pedidos</h3>
+          <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <footer class="cart-footer">
+          <div class="cart-total">
+            <span>Total</span>
+            <strong>R$ <span id="cartTotal">0,00</span></strong>
+          </div>
+
+          <button class="btn-primary">
+            Solicitar Pedido
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </footer>
+      </aside>
+    </div>
 
     <!-- Cardápio -->
     <main>
