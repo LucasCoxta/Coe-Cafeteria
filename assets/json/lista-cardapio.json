@@ -13,84 +13,48 @@
       "imagem": "../img/cardapio/flat-white.webp"
     },
     {
-      "nome": "Café Vienense",
-      "descricao": "Expresso com chantilly cremoso.",
-      "preco": "15.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
       "nome": "Irish Coffee",
       "descricao": "Café com um toque de whisky e creme.",
       "preco": "18.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/irish-Coffee.webp"
     },
     {
-      "nome": "Café Caramelo Salgado",
+      "nome": "Cafe Caramelo Salgado",
       "descricao": "Expresso com creme de leite e calda de caramelo salgado.",
       "preco": "16.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cafe-caramelosalgado.webp"
     },
     {
       "nome": "Latte de Baunilha",
       "descricao": "Café com leite vaporizado e essência artesanal de baunilha.",
       "preco": "14.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Café Tônico",
-      "descricao": "Expresso servido sobre água tônica com gelo, refrescante e aromático.",
-      "preco": "15.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/latte-baunilha.webp"
     }
   ],
   "tradicionais": [
     {
-      "nome": "Café Expresso",
+      "nome": "Cafe Expresso",
       "descricao": "Café expresso forte e encorpado.",
       "preco": "6.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Café Coado",
-      "descricao": "Café tradicional coado na hora.",
-      "preco": "5.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Pingado",
-      "descricao": "Café com um toque de leite.",
-      "preco": "6.50",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cafe-expresso.webp"
     },
     {
       "nome": "Cappuccino",
       "descricao": "Café com leite vaporizado e espuma cremosa.",
       "preco": "10.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Mocha",
-      "descricao": "Cappuccino com calda de chocolate.",
-      "preco": "12.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cappuccino.webp"
     },
     {
       "nome": "Macchiato",
       "descricao": "Expresso com uma pequena camada de espuma.",
       "preco": "8.50",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/macchiato-caramelo.webp"
     },
     {
-      "nome": "Latte",
-      "descricao": "Café expresso com leite vaporizado.",
-      "preco": "9.50",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Café com Leite",
+      "nome": "Cafe com Leite",
       "descricao": "Mistura clássica de café e leite.",
       "preco": "7.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cafe-leite.webp"
     }
   ],
 
@@ -99,97 +63,66 @@
       "nome": "Iced Coffee",
       "descricao": "Café gelado refrescante.",
       "preco": "10.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/iced-coffee.webp"
     },
     {
       "nome": "Frapuccino",
       "descricao": "Bebida gelada cremosa com café.",
       "preco": "14.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/frapuccino.webp"
     },
     {
-      "nome": "Iced Latte",
-      "descricao": "Café expresso com leite gelado.",
-      "preco": "11.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Café Gelado com Baunilha",
+      "nome": "Cafe Gelado com Baunilha",
       "descricao": "Café gelado com toque de baunilha.",
       "preco": "12.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cafe-gelado-baunilha.webp"
     },
     {
-      "nome": "Chocolate Gelado",
-      "descricao": "Bebida gelada de chocolate cremoso.",
-      "preco": "13.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Matcha Gelado",
-      "descricao": "Chá verde japonês gelado com leite.",
-      "preco": "15.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Chá Gelado de Limão",
+      "nome": "Cha Gelado de Limão",
       "descricao": "Chá preto gelado com limão.",
       "preco": "9.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/chagelado-limao.webp"
     },
     {
-      "nome": "Chá Gelado de Pêssego",
+      "nome": "Cha Gelado de Pêssego",
       "descricao": "Chá gelado sabor pêssego.",
       "preco": "9.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cha-de-pessego.webp"
     }
   ],
-
   "chas": [
     {
-      "nome": "Chá de Camomila",
+      "nome": "Cha de Camomila",
       "descricao": "Chá suave de camomila.",
       "preco": "7.00",
       "imagem": "https://via.placeholder.com/150"
     },
     {
-      "nome": "Chá de Hortelã",
+      "nome": "Cha de Hortelã",
       "descricao": "Chá refrescante de hortelã.",
       "preco": "7.00",
       "imagem": "https://via.placeholder.com/150"
     },
     {
-      "nome": "Chá Preto",
-      "descricao": "Chá tradicional encorpado.",
-      "preco": "8.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Chá Verde",
-      "descricao": "Chá leve e aromático.",
-      "preco": "9.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Chá de Frutas Vermelhas",
+      "nome": "Cha de Frutas Vermelhas",
       "descricao": "Infusão aromática de frutas.",
       "preco": "10.00",
       "imagem": "https://via.placeholder.com/150"
     },
     {
-      "nome": "Chá de Gengibre",
+      "nome": "Cha de Gengibre",
       "descricao": "Chá quente com sabor intenso.",
       "preco": "9.00",
       "imagem": "https://via.placeholder.com/150"
     },
     {
-      "nome": "Chá de Maçã",
+      "nome": "Cha de Maçã",
       "descricao": "Infusão de maçã doce e suave.",
       "preco": "8.50",
       "imagem": "https://via.placeholder.com/150"
     },
     {
-      "nome": "Chá de Capim-Limão",
+      "nome": "Cha de Capim-Limão",
       "descricao": "Chá aromático e relaxante.",
       "preco": "8.00",
       "imagem": "https://via.placeholder.com/150"

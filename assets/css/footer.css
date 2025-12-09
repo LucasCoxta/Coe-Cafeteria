@@ -79,6 +79,12 @@
     text-align: center;
   }
 
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
   .social-icons a {
     margin: 0 10px;
   }

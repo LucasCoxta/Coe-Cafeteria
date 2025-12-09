@@ -79,11 +79,21 @@ function renderCart() {
             <strong>${item.nome}</strong>
             <div>R$ ${formatPrice(item.preco)}</div>
           </div>
-          <div>
-            <button data-dec="${item.id}">-</button>
-            <span>${item.qtd}</span>
-            <button data-inc="${item.id}">+</button>
-            <button data-remove="${item.id}">🗑</button>
+
+          <div class="cart-actions">
+            <button data-dec="${item.id}" class="icon-btn">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <span class="cart-qty">${item.qtd}</span>
+
+            <button data-inc="${item.id}" class="icon-btn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <button data-remove="${item.id}" class="icon-btn remove">
+              <i class="fa-solid fa-trash"></i>
+            </button>
           </div>
         </div>
       `;
@@ -120,17 +130,26 @@ export function addToCart(produto) {
 }
 
 function handleActions(e) {
-  const id =
-    e.target.dataset.inc || e.target.dataset.dec || e.target.dataset.remove;
+  const button = e.target.closest("button");
+  if (!button) return;
 
+  const id = button.dataset.inc || button.dataset.dec || button.dataset.remove;
   if (!id) return;
 
   const item = cart.find((i) => i.id === id);
   if (!item) return;
 
-  if (e.target.dataset.inc) item.qtd++;
-  if (e.target.dataset.dec) item.qtd = Math.max(1, item.qtd - 1);
-  if (e.target.dataset.remove) cart = cart.filter((i) => i.id !== id);
+  if (button.dataset.inc) {
+    item.qtd++;
+  }
+
+  if (button.dataset.dec) {
+    item.qtd = Math.max(1, item.qtd - 1);
+  }
+
+  if (button.dataset.remove) {
+    cart = cart.filter((i) => i.id !== id);
+  }
 
   saveCart();
   renderCart();
