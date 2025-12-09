@@ -1,17 +1,8 @@
-body {
-  background-color: var(--cor-secundaria);
-  color: #333;
-}
 
-
-/* -------------------------
-     SEÇÃO SOBRE
-  --------------------------*/
 section.Sobre {
   padding: 60px 80px;
   background-color: var(--cor-secundaria);
 }
-
 
 .cards1 {
   max-width: 900px;
@@ -26,37 +17,62 @@ section.Sobre {
   
 }
 
-.cards1 p {
+.Nossahistoria {
+ display: flex;
+ gap: 40px;
+ margin-top: 20px;
+}
+
+.tituloHistoria {
+  margin-top: 1.6rem;
+}
+
+.Nossahistoria p {
+ flex: 1;
+ line-height: 1.6;
+ font-size: 16px;
+}
+
+.nossaMissao {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+ }
  
+ .nossaMissao p {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-top: 1.0rem;
+ }
+
+ .subTitulo {
+  font-size: 18px;
+  color: var(--cor-primaria);
+  margin-bottom: 40px;
+  opacity: 55%;
+  margin-top: 0.6rem;
+ }
+
+.tituloMissao {
+  margin-top: 1.6rem;
 }
 
 .Jornada {
    font-size: 18px;
-  color: #09372B;
+  color: var(--cor-primaria);
   margin-bottom: 40px;
   opacity: 50%;
 }
-.Nossahistoria,
-.nossaMissao {
-  width: 100%;
-  height: 250px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
 
-/* -------------------------
-     SEÇÃO VALORES
-  --------------------------*/
 section.Valores {
   background-color: var(--cor-primaria);
   padding: 60px 80px;
   text-align: center;
   color: #fff;
-}
-
-section.Valores h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
 }
 
 section.Valores p {
@@ -84,26 +100,12 @@ section.Valores > div > div h1 {
   margin-bottom: 10px;
 }
 
-section.Valores > div > div p {
-  font-size: 15px;
-}
 
-/* -------------------------
-     SEÇÃO EQUIPE
-  --------------------------*/
+
 section.Equipe {
   padding: 60px 80px;
   text-align: center;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-secundaria); 
+  margin-bottom: 1.5rem;
 }
 
-section.Equipe h1 {
-  color: var(--cor-primaria);
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-section.Equipe p {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
