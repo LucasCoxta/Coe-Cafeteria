@@ -1,152 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coe café</title>
-    <link rel="stylesheet" href="assets/css/style.css" >
-    <script src="assets/js/scripts.js" defer type="module" ></script>
-  </head>
-  <body>
-      <!-- HEADER -->
-    <header>
-      <div class="logo">
-        <img
-          src="./assets/img/Gemini_Generated_Image_mjvo9vmjvo9vmjvo-removebg-preview 1.png"
-          alt="logo"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coe café</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/scripts.js" defer type="module"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="assets/img/Gemini_Generated_Image_mjvo9vmjvo9vmjvo-removebg-preview 1.png" alt="logo" />
+    </div>
+
+    <button class="menu-btn" id="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="./assets/pages/cardapio.html">Cardápio</a>
+      <a href="./assets/pages/sobre.html">Sobre Nós</a>
+      <a href="./assets/pages/pedido.html">Pedido Online</a>
+      <a href="./assets/pages/contatos.html">Contato</a>
+
+      <div class="cart-mobile">
+        <div class="cart-wrapper" id="cartBtn" title="Ver pedido">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="cart-desktop">
+      <div class="cart-wrapper" id="cartBtnDesktop" title="Ver pedido">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-badge" id="cartCountDesktop">0</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="cart-overlay" id="cartOverlay">
+    <aside class="cart">
+      <div class="cart-header">
+        <h3>Meus pedidos</h3>
+        <button id="closeCart">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
 
-      <button class="menu-btn" id="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="cart-items" id="cartItems"></div>
 
-      <nav class="nav" id="menu">
-        <a href="index.html">Inicio</a>
-        <a href="assets/pages/cardapio.html">Cardápio</a>
-        <a href="assets/pages/sobre.html">Sobre Nós</a>
-        <a href="assets/pages/pedido.html">Pedido Online</a>
-        <a href="assets/pages/contatos.html">Contato</a>
-      </nav>
-
-      <div class="store-container"></div>
-    </header>
-
-      <section class="paragrafo1">
-        <h1> Café,amigos & um bom lugar!</h1>
-        <p> Café especiais preparados com dedicação para tornar seu dia melhor</p> 
-       <div class="cotoes">
-          <button class=" btn-beje"> Ver Cadapio</button>
-          <button class=" btn-verde">Faça seu pedido</button>
-      
-      </section>
-      <section class="produtos" id="menu">
-        <h2>Novidades no Cardápio</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="assets/img/novidades/affogato.jpeg" alt="affogato">
-                <h3>Affogato</h3>
-                <p>Pra aqueles momentos que pedemcarinho em forma de sobremesa.</p>
-                <p>R$ 31,90</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/img/novidades/cheesecake.jpeg" alt="cheesecake">
-                <h3>Cheesecake</h3>
-                <p>Perfeito para quem gosta de suavidade.</p>
-                <p>R$ 24,90</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/img/novidades/Bruschetta.jpeg">
-                <h3>Bruschetta</h3>
-                <p>Perfeito para quem gosta de um toque gourmet até nas coisas simples do dia.</p>
-                <p>R$ 12,90</p>
-            </div>
+      <footer class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong>R$ <span id="cartTotal">0,00</span></strong>
         </div>
-    </section>
-      <section class="historia">
-        <h2>Nossa história</h2>
+
+        <button class="btn-primary">
+          Solicitar Pedido
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </footer>
+    </aside>
+  </div>
+
+  <section class="paragrafo1">
+    <h1> Café,amigos & um bom lugar!</h1>
+    <p> Café especiais preparados com dedicação para tornar seu dia melhor</p>
+    <div class="cotoes">
+      <button class=" btn-beje"> Ver Cadapio</button>
+      <button class=" btn-verde">Faça seu pedido</button>
+
+  </section>
+  <section class="produtos" id="menu">
+    <h2>Novidades no Cardápio</h2>
+    <div class="cards">
+      <div class="card-cardapio">
+        <img src="assets/img/novidades/affogato.jpeg" alt="affogato">
+        <div class="info-cardapio">
+          <h3> Affogato </h3>
+          <p> Pra aqueles momentos que pedemcarinho em forma de sobremesa.</p>
+          <span class="preco-cardapio">R$ 29,90</span>
+          <button class="btn-add-cart" data-id="${id}" data-nome="${item.nome}" data-preco="${item.preco}"
+            data-img="${item.imagem}">
+            Fazer pedido <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card-cardapio">
+        <img src="assets/img/novidades/Bruschetta.jpeg" alt="Bruschetta">
+        <div class="info-cardapio">
+          <h3> Bruschetta </h3>
+          <p> Perfeito para quem gosta de um toque gourmet até nas coisas simples do dia</p>
+          <span class="preco-cardapio">R$ 15,90</span>
+          <button class="btn-add-cart" data-id="${id}" data-nome="${item.nome}" data-preco="${item.preco}"
+            data-img="${item.imagem}">
+            Fazer pedido <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="card-cardapio">
+        <img src="assets/img/novidades/cheesecake.jpeg" alt="cheesecake">
+        <div class="info-cardapio">
+          <h3> cheesecake</h3>
+          <p> Sabe aquele doce que parece uma abraço em forma de sobremesa?</p>
+          <span class="preco-cardapio">R$ 12,90</span>
+          <button class="btn-add-cart" data-id="${id}" data-nome="${item.nome}" data-preco="${item.preco}"
+            data-img="${item.imagem}">
+            Fazer pedido <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="historia">
+    <h2>Nossa história</h2>
+    <p>
+      Fundado em 2010, O Coe Café nasceu do sonho de criar um espaço onde
+      café premium emcotra acolhimento genuino. Cada xicara conta historia
+      de paixão, qualidade e dedicação.
+    </p>
+    <p>
+      Trabalhamos apenas com grãos selecionados, torrados artesanalmente e
+      preparados por baristas experientes que amam o que fazem.
+    </p>
+  </section>
+  <section class="sobre-nos">
+    <h2>O que dizem sobre nós</h2>
+    <p>Experiênciasreais dos nossos clientes</p>
+  </section>
+
+  <section class="Contato">
+    <h2>Venha Nos Visitar</h2>
+    <h3>endereço</h3>
+    <p>Q 6 CL QD 06 CL21, LOJA 08,Sobradinho, Distrito Federal</p>
+    <h3>horário</h3>
+    <p>segunda á sexta: 14h - 21h</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.843078497726!2d-47.7966535!3d-15.653342500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3f57f92e61cf%3A0xe1ff21b7142a9aa6!2zQ29lIENhZsOp!5e0!3m2!1spt-BR!2sbr!4v1764116542123!5m2!1spt-BR!2sbr"
+      width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-containerr">
+      <div class="footer-brand">
+        <img src="assets/img/coe-persona.png" alt="Logo Coe Café" class="footer-logo" />
         <p>
-          Fundado em 2010, O Coe Café nasceu do sonho de criar um espaço onde
-          café premium emcotra acolhimento genuino. Cada xicara conta historia
-          de paixão, qualidade e dedicação.
+          Cafés especiais preparados com dedicação<br />para tornar seu dia
+          melhor.
         </p>
-        <p>
-          Trabalhamos apenas com grãos selecionados, torrados artesanalmente e
-          preparados por baristas experientes que amam o que fazem.
-        </p>
-      </section>
-      <section class="sobre-nos">
-        <h2>O que dizem sobre nós</h2>
-        <p>Experiênciasreais dos nossos clientes</p>
-      </section>
 
-      <section class="Contato">
-        <h2>Venha Nos Visitar</h2>
-        <h3>endereço</h3>
-        <p>Q 6 CL QD 06 CL21, LOJA 08,Sobradinho, Distrito Federal</p>
-        <h3>horário</h3>
-        <p>segunda á sexta: 14h - 21h</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.843078497726!2d-47.7966535!3d-15.653342500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3f57f92e61cf%3A0xe1ff21b7142a9aa6!2zQ29lIENhZsOp!5e0!3m2!1spt-BR!2sbr!4v1764116542123!5m2!1spt-BR!2sbr"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
- 
-    <footer class="footer">
-      <div class="footer-containerr">
-        <div class="footer-brand">
-          <img
-            src="assets/img/coe-persona.png"
-            alt="Logo Coe Café"
-            class="footer-logo"
-          />
-          <p>
-            Cafés especiais preparados com dedicação<br />para tornar seu dia
-            melhor.
-          </p>
-
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-coll">
-          <h3>Links Rápidos</h3>
-          <a href="..//..//index.html">Início</a>
-          <a href="..//pages/cardapio.html">Cardápio</a>
-          <a href="../pages/sobre.html">Sobre Nós</a>
-          <a href="..//pages/pedido.html">Pedidos Online</a>
-          <a href="./assets/pages/contatos.html"></a>
-        </div>
-
-        <div class="footer-coll">
-          <h3>Contato</h3>
-          <p>Q 6 CL QD 06 CL21 , LOJA 08,<br />Sobradinho, Distrito Federal</p>
-          <p>(61) 98190-4208</p>
-          <p>coecafe@gmail.com</p>
-        </div>
-
-        <div class="footer-coll">
-          <h3>Horários</h3>
-          <p>Segunda à Sexta : 14h - 21h</p>
-          <p>Sábado e Domingo : 08h - 21h</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        © 2025 Coe Cafeteria | Todos os direitos reservados.
+      <div class="footer-coll">
+        <h3>Links Rápidos</h3>
+        <a href="..//..//index.html">Início</a>
+        <a href="..//pages/cardapio.html">Cardápio</a>
+        <a href="../pages/sobre.html">Sobre Nós</a>
+        <a href="..//pages/pedido.html">Pedidos Online</a>
+        <a href="./assets/pages/contatos.html"></a>
       </div>
-    </footer>
-  </body>
+
+      <div class="footer-coll">
+        <h3>Contato</h3>
+        <p>Q 6 CL QD 06 CL21 , LOJA 08,<br />Sobradinho, Distrito Federal</p>
+        <p>(61) 98190-4208</p>
+        <p>coecafe@gmail.com</p>
+      </div>
+
+      <div class="footer-coll">
+        <h3>Horários</h3>
+        <p>Segunda à Sexta : 14h - 21h</p>
+        <p>Sábado e Domingo : 08h - 21h</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Coe Cafeteria | Todos os direitos reservados.
+    </div>
+  </footer>
+</body>
+
 </html>
