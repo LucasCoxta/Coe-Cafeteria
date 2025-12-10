@@ -1,79 +1,213 @@
-    body {
-        background-color: #f5e9d5;
-        color: #1a1a1a;
-    }
 
-    /* ===== CARDS ===== */
-    .cards {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
 
-    .card {
-        background-color: white;
-        border-radius: 12px;
-        width: 300px;
-        padding: 15px;
-        text-align: left;
-        transition: 0.2s;
-    }
+/* ===== Página ===== */
+body {
+    background-color: #FCEFD7;
+    color:  #09372d;
+}
 
-    .card:hover {
-        transform: translateY(-3px);
-    }
+/* ===== Seção principal ===== */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
 
-    .card img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 10px;
-    }
+/* ===== Título ===== */
+.hero h1 {
+    font-family: Allroundgothic;
+    font-size: 68px;
+    text-align: center;
+}
 
-    .card h3 {
-        margin-top: 10px;
-        font-size: 20px;
-    }
+.hero h1 span {
+    display: block;
+}
 
-    .card button {
-        margin-top: 10px;
-        padding: 10px;
-        width: 100%;
-        background-color: #0a8f3c;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-    }
+.subtext {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color:#09372d
+}
+/*Parte dos cards */
+/* ===== Container ===== */
+.cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 20px;
+}
 
-    /* ===== OUTRAS FORMAS DE PEDIR ===== */
-    .formas {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
+/* ===== Card ===== */
+.card {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    border-radius: 25px;
+    overflow: hidden;
+}
 
-    .forma-item {
-        background: white;
-        width: 280px;
-        padding: 15px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
+/* Imagem atrás */
+.card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
 
-    .forma-item span {
-        background-color: #ececec;
-        padding: 10px;
-        border-radius: 6px;
-    }
+/* Overlay escurecendo a imagem */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 2;
+}
 
-    .forma-item a {
-        text-decoration: none;
-        font-size: 22px;
-        color: #1a1a1a;
-        margin-left: auto;
-    }
+/* Conteúdo do card */
+.card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color:white;
+    z-index: 3;
+}
+
+/* Ícone */
+.icon {
+    font-size: 26px;
+    opacity: 0.95;
+    margin-bottom: 10px;
+}
+
+/* Título */
+.card-content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Descrição */
+.card-content p {
+    font-size: 16px;
+    opacity: 0.9;
+    color: white;
+    margin-top: 5px;
+}
+
+/* ===== Botão WhatsApp ===== */
+.btn-whatsapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    color: var(--cor-primaria);
+    padding: 12px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.btn-whatsapp .arrow {
+    font-size: 20px;
+}
+
+/* Hover */
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+/* área de what */
+.pedido-container {
+    background: #f3f3f3;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    max-width: 67.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+.pedido-container h2 {
+    font-size: 28px;
+    color: #0a3c2f;
+    margin-bottom: 5px;
+}
+
+.pedido-container p {
+    font-size: 15px;
+    color: #6e857c;
+    margin-bottom: 30px;
+}
+
+.pedido-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.pedido-card {
+    display: flex;
+    align-items: center;
+    padding: 18px 22px;
+    width: 340px;
+    background: #f5f7ef;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    position: relative;
+}
+
+.pedido-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.pedido-card.ifood {
+    background: #f3eaea;
+}
+
+.icon-box {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: #c2d06b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.pedido-card.ifood .icon-box {
+    background: #e34848;
+}
+
+.icon-box img {
+    width: 32px;
+}
+
+.info h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #123c2d;
+}
+
+.info span {
+    font-size: 14px;
+    color: #677d72;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 26px;
+    color: #203d2f;
+    transition: 0.25s;
+}
+
+.pedido-card:hover .arrow {
+    transform: translateX(5px);
+}
