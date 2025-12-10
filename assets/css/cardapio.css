@@ -2,7 +2,7 @@ body {
   background-color: var(--cor-secundaria);
 }
 
-main {
+.main {
   padding: 0 220px;
 }
 
@@ -87,8 +87,9 @@ p {
 }
 
 #lista-produtos.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding: 30px 20px;
   justify-items: center;
@@ -177,19 +178,19 @@ p {
 }
 
 @media (max-width: 1400px) {
-  main {
+  .main {
     padding: 0 140px;
   }
 }
 
 @media (max-width: 1200px) {
-  main {
+  .main {
     padding: 0 100px;
   }
 }
 
 @media (max-width: 992px) {
-  main {
+  .main {
     padding: 0 60px;
   }
 
@@ -213,7 +214,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  main {
+  .main {
     padding: 0 25px;
     margin-top: 90px;
   }
@@ -241,7 +242,7 @@ p {
 }
 
 @media (max-width: 576px) {
-  main {
+  .main {
     padding: 0 15px;
     margin-top: 85px;
   }

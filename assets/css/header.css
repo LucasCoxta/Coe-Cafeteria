@@ -3,15 +3,24 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 220px;
+  padding: 1rem;
   background: var(--cor-primaria);
   color: var(--cor-secundaria);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 998;
+  z-index: 10;
   transition: 0.4s;
   border-bottom: 1px solid transparent;
+}
+
+.header-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav {
@@ -82,6 +91,7 @@ header {
     padding: 2rem;
     gap: 1.5rem;
     transition: 0.4s;
+    z-index: 9;
   }
 
   .nav.active {
