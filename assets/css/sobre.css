@@ -73,6 +73,7 @@ section.Valores {
   padding: 60px 80px;
   text-align: center;
   color: #fff;
+  
 }
 
 section.Valores p {
@@ -100,7 +101,17 @@ section.Valores > div > div h1 {
   margin-bottom: 10px;
 }
 
+.pilares {
+  color: var(--cor-secundaria);
+}
 
+.pilares2 {
+  font-size: 18px;
+  color: var(--cor-secundaria);
+  margin-bottom: 40px;
+  opacity: 75%;
+  margin-top: 0.4rem;
+}
 
 section.Equipe {
   padding: 60px 80px;
@@ -109,3 +120,28 @@ section.Equipe {
   margin-bottom: 1.5rem;
 }
 
+.cardValores {
+  width: 400px;
+}
+
+.paixao {
+  margin-top: 1.0rem;
+  
+}
+.qualidade {
+  margin-top: 1.0rem;
+}
+.comunidade {
+  margin-top: 1.8rem;
+}
+.paixao2 {
+  text-align: center;
+  margin-top: 1.9rem;
+}
+.qualidade2 {
+  text-align: center;
+}
+.comunidade2 {
+  margin-top: 1.2rem;
+  text-align: center;
+}
