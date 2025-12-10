@@ -131,6 +131,54 @@
   font-size: 15px;
   opacity: 0.7;
 }
+.cards-container {
+  display: flex;
+  gap: 20px;
+  }
+  .card-comentario {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform .2s ease;
+  }
+  .card-comentario:hover {
+  transform: translateY(-5px);
+}
+
+.comentario-texto {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.autor {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.autor img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.autor h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #5a3e2b;
+  font-weight: bold;
+}
+
+.autor span {
+  font-size: 14px;
+  color: #777;
+}
 
 /* ======= CONTATO / MAPA ======= */
 .Contato {
