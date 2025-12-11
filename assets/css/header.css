@@ -57,7 +57,7 @@ header {
   display: block;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: var(--cor-secundaria);
   margin: 6px 0;
   transition: 0.3s;
 }
