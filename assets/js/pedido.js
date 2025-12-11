@@ -1,31 +1,37 @@
 export function initpedido() {
-
     document.addEventListener("DOMContentLoaded", () => {
+        function openWhatsApp(number, message) {
+            const url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
+        const mainCards = document.querySelectorAll(".cards-container .card");
 
-        const cards = document.querySelectorAll('.card');
+        mainCards.forEach(card => {
+            card.addEventListener("click", () => {
 
-        cards.forEach(card => {
+                const titulo = card.querySelector("h3")?.textContent || "Pedido";
 
-            // Quando passar o mouse no card → cria o ícone
-            card.addEventListener("mouseenter", () => {
+                openWhatsApp(
+                    "5561981904208",
+                    `Olá! Gostaria de ver mais opções da categoria: ${titulo}.`
+                );
 
-                const btn = card.querySelector('.btn-whatsapp');
-
-                // Evita criar o ícone mais de uma vez
-                if (btn && !btn.querySelector('.whatsapp-icon')) {
-
-                    const icon = document.createElement("img");
-                    icon.src = "img/whatsapp.png"; 
-                    icon.alt = "WhatsApp";
-                    icon.classList.add("whatsapp-icon");
-
-                    btn.prepend(icon);
-                }
             });
-
         });
+        const cardWhats = document.querySelector(".pedido-card.whatsapp");
+        if (cardWhats) {
+            cardWhats.addEventListener("click", () => {
+                openWhatsApp("5561912341234", "Olá! Quero fazer um pedido.");
+            });
+        }
+        const cardIfood = document.querySelector(".pedido-card.ifood");
+        if (cardIfood) {
+            cardIfood.addEventListener("click", () => {
+                window.open("https://www.ifood.com.br", "_blank");
+            });
+        }
 
     });
-
 }
+
 
