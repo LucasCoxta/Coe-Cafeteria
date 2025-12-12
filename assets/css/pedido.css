@@ -57,7 +57,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(92, 87, 87, 0.45);
+    background: rgba(20, 18, 18, 0.45);
     z-index: 2;
 }
 
@@ -66,7 +66,7 @@
     bottom: 20px;
     left: 20px;
     right: 20px;
-    color: white;
+    color:  #f5d7b0;
     z-index: 3;
 }
 
@@ -83,13 +83,14 @@
 .card-content p {
     font-size: 16px;
     opacity: 0.9;
+    color: #f5d7b0;
 }
 
 .btn-whatsapp {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    background: var(--cor-segundaria);
     color: var(--cor-primaria);
     padding: 12px 18px;
     border-radius: 12px;
