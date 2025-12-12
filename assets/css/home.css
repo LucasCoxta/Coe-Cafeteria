@@ -1,5 +1,6 @@
 .paragrafo1 {
   padding: 80px 60px;
+  display: flex;
 }
 
 .paragrafo1 h1 {
@@ -47,6 +48,11 @@
 
 .btn-verde:hover {
   background: #b4c74a;
+}
+
+.Grup-persona img{
+ margin-left: 3%;
+ 
 }
 
 /* ======= PRODUTOS / CARDS ======= */
@@ -101,6 +107,7 @@
 
 /* ======= HISTÓRIA ======= */
 .historia {
+  display: flex;
   background: #0b2f22;
   padding: 50px 60px;
   color: #fff;
@@ -115,6 +122,11 @@
   max-width: 600px;
   margin-bottom: 12px;
   color: var(--cor-secundaroa);
+}
+.group img{
+  
+  padding: 20%;
+ 
 }
 
 /* ======= SOBRE NÓS ======= */
@@ -182,6 +194,7 @@
 
 /* ======= CONTATO / MAPA ======= */
 .Contato {
+  display: flex;
   background: var(--cor-primaria);
   padding: 50px 60px;
   color: #fff;
@@ -203,6 +216,6 @@
 iframe {
   margin-top: 20px;
   border-radius: 12px;
-  width: 380px;
-  height: 260px;
+  height: 350px 100px;
+margin-left: 80%;
 }
