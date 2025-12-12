@@ -1,5 +1,5 @@
 .sobre {
-  padding: 60px 80px;
+  margin-top: 90px;
 }
 
 .sobre-container {
@@ -11,6 +11,10 @@
 .sobre-container img {
   width: 100%;
   margin: 20px 0;
+}
+
+.sobre-container h1 {
+  color: var(--cor-primaria);
 }
 
 .sobre-container .sobre-container h1 {
@@ -49,6 +53,7 @@
   padding: 60px 80px;
   text-align: center;
   color: var(--cor-secundaria);
+  margin-top: 2rem;
 }
 
 .pilares {
@@ -71,7 +76,7 @@
 
 .card-valores {
   background-color: var(--cor-secundaria);
-  color: #333;
+  color: var(--cor-primaria);
   width: 250px;
   padding: 25px;
   border-radius: 12px;
@@ -130,10 +135,6 @@
 }
 
 @media (max-width: 768px) {
-  .sobre {
-    padding: 40px 20px;
-  }
-
   .sobre-container h1 {
     font-size: 28px;
   }
