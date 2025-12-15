@@ -1,5 +1,5 @@
 .sobre {
-  margin-top: 90px;
+  margin-top: 4rem;
 }
 
 .sobre-container {
@@ -15,12 +15,9 @@
 
 .sobre-container h1 {
   color: var(--cor-primaria);
-}
-
-.sobre-container .sobre-container h1 {
-  color: var(--cor-primaria);
-  font-size: 36px;
-  font-weight: 800;
+  font-family: Allroundgothic;
+  font-size: 62px;
+  text-align: center;
 }
 
 .jornada {
@@ -33,6 +30,8 @@
 .titulo-historia {
   margin-top: 1.6rem;
   color: var(--cor-primaria);
+  font-family: Allroundgothic;
+  font-weight: 600;
 }
 
 .nossa-historia {
@@ -45,6 +44,7 @@
   flex: 1;
   line-height: 1.6;
   font-size: 16px;
+  text-align: left;
 }
 
 .valores {
@@ -59,12 +59,14 @@
 .pilares {
   color: var(--cor-secundaria);
   font-size: 32px;
+  font-family: Allroundgothic;
 }
 
 .pilares-sub {
   font-size: 18px;
   margin: 0.4rem 0 40px;
   opacity: 0.75;
+  color: var(--cor-secundaria);
 }
 
 .valores-cards {
@@ -74,11 +76,15 @@
   flex-wrap: wrap;
 }
 
+.valores-cards h3 {
+  font-family: Allroundgothic;
+}
+
 .card-valores {
   background-color: var(--cor-secundaria);
   color: var(--cor-primaria);
   width: 250px;
-  padding: 25px;
+  padding: 1rem;
   border-radius: 12px;
 }
 
@@ -104,6 +110,11 @@
   background-color: var(--cor-secundaria);
 }
 
+.equipe h2 {
+  font-family: Allroundgothic;
+  color: var(--cor-primaria);
+}
+
 .subtitulo {
   font-size: 18px;
   color: var(--cor-primaria);
@@ -126,6 +137,7 @@
   gap: 40px;
   margin: 20px auto 0;
   max-width: 900px;
+  text-align: left;
 }
 
 .nossa-missao p {
