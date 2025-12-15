@@ -1,31 +1,25 @@
 export function initpedido() {
+  document.addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
 
-    document.addEventListener("DOMContentLoaded", () => {
+    if (!card) {
+      document
+        .querySelectorAll(".card")
+        .forEach((c) => c.classList.remove("active"));
+      return;
+    }
 
-        const cards = document.querySelectorAll('.card');
+    document
+      .querySelectorAll(".card")
+      .forEach((c) => c.classList.remove("active"));
 
-        cards.forEach(card => {
+    card.classList.add("active");
+  });
 
-            // Quando passar o mouse no card → cria o ícone
-            card.addEventListener("mouseenter", () => {
-
-                const btn = card.querySelector('.btn-whatsapp');
-
-                // Evita criar o ícone mais de uma vez
-                if (btn && !btn.querySelector('.whatsapp-icon')) {
-
-                    const icon = document.createElement("img");
-                    icon.src = "img/whatsapp.png"; 
-                    icon.alt = "WhatsApp";
-                    icon.classList.add("whatsapp-icon");
-
-                    btn.prepend(icon);
-                }
-            });
-
-        });
-
-    });
-
+  document.addEventListener("click", (e) => {
+    if (e.target.closest(".cardOP-btn")) {
+      e.stopPropagation();
+      console.log("Botão clicado");
+    }
+  });
 }
-

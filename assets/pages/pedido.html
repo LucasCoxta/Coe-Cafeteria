@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Coe Café | Pedidos Online</title>
+
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/scripts.js" type="module" defer></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
+
   <body>
-    <!-- HEADER -->
     <header>
       <div class="header-container">
         <div class="logo">
@@ -77,59 +79,64 @@
         </footer>
       </aside>
     </div>
+
     <main>
+      <section class="hero">
+        <h1>
+          <span>O que você deseja</span>
+          <span class="underline">saborear hoje?</span>
+        </h1>
+        <p class="subtext">
+          Escolha uma categoria e faça seu pedido diretamente pelo WhatsApp
+        </p>
+      </section>
+
       <section class="cards-container">
-        <!-- CARD 1 -->
         <div class="card">
           <img src="../img/novidades/affogato.jpeg" alt="Cafés e Bebidas" />
-
           <div class="overlay"></div>
-
           <div class="card-content">
             <h3>Cafés & Bebidas</h3>
             <p>Espressos, lattes, cappuccinos e especiais</p>
           </div>
+          <button class="cardPO-btn">Pedir pelo WhatsApp →</button>
         </div>
 
-        <!-- CARD 2 -->
         <div class="card">
           <img
             src="../img/novidades/cheesecake.jpeg"
             alt="Doces e Sobremesas"
           />
-
           <div class="overlay"></div>
-
           <div class="card-content">
             <h3>Doces & Sobremesas</h3>
             <p>Bolos, tortas, brownies e doces artesanais</p>
           </div>
+          <button class="cardPO-btn">Pedir pelo WhatsApp →</button>
         </div>
 
-        <!-- CARD 3 -->
         <div class="card">
           <img
             src="../img/novidades/Bruschetta.jpeg"
             alt="Lanches e Salgados"
           />
-
           <div class="overlay"></div>
-
           <div class="card-content">
             <h3>Lanches & Salgados</h3>
             <p>Sanduíches, croissants e salgados frescos</p>
           </div>
+          <button class="cardPO-btn">Pedir pelo WhatsApp →</button>
         </div>
       </section>
+
       <section class="pedido-container">
         <h2>Outras formas de pedir</h2>
         <p>Escolha o canal mais conveniente para você</p>
 
         <div class="pedido-cards">
-          <!-- CARD WHATSAPP -->
           <div class="pedido-card whatsapp" data-whats="61912341234">
             <div class="icon-box">
-              <img src="img/whatsapp.png" alt="WhatsApp" />
+              <i class="fa-brands fa-whatsapp"></i>
             </div>
             <div class="info">
               <h3>WhatsApp</h3>
@@ -138,10 +145,12 @@
             <div class="arrow">→</div>
           </div>
 
-          <!-- CARD IFOOD -->
           <div class="pedido-card ifood">
+            <a
+              href="https://www.ifood.com.br/delivery/brasilia-df/coe-cafe-sobradinho/4a75ff03-cf4e-4636-9303-82e9ef5039ad"
+            ></a>
             <div class="icon-box">
-              <img src="img/ifood.png" alt="iFood" />
+              <i class="fa-solid fa-truck-fast"></i>
             </div>
             <div class="info">
               <h3>iFood</h3>
@@ -150,6 +159,36 @@
             <div class="arrow">→</div>
           </div>
         </div>
+      </section>
+
+      <section class="info-section">
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3>Horários</h3>
+            <p>Seg à Sex: 14h - 21h<br />Sab e Dom: 8h - 21h</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </div>
+            <h3>Localização</h3>
+            <p>QD 06 CL21, LOJA 08, Sobradinho,<br />Distrito Federal</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-address-book"></i>
+            </div>
+            <h3>Contato</h3>
+            <p>(61) 98190-4208<br />coecafe@gmail.com</p>
+          </div>
+        </div>
+
+        <p class="prep-time">Tempo médio de preparo: 15–20 minutos</p>
       </section>
     </main>
 
@@ -161,9 +200,10 @@
             alt="Logo Coe Café"
             class="footer-logo"
           />
+
           <p>
-            Cafés especiais preparados com dedicação<br />para tornar seu dia
-            melhor.
+            Cafés especiais preparados com dedicação<br />
+            para tornar seu dia melhor.
           </p>
 
           <div class="social-icons">
