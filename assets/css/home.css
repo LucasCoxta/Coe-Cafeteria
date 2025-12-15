@@ -4,7 +4,7 @@
 }
 
 .paragrafo1 h1 {
-  font-size: 46px;
+  font-size: 48px;
   font-weight: 800;
   margin-bottom: 10px;
   color: #0b2f22;
@@ -49,10 +49,16 @@
 .btn-verde:hover {
   background: #b4c74a;
 }
+.Grup-persona {
+  position: relative;
+  right: 30px;
+  bottom: 40px;
+  
+}
 
-.Grup-persona img{
- margin-left: 3%;
- 
+.Grup-persona img {
+  width: 500px;
+  margin-left: 30px;
 }
 
 /* ======= PRODUTOS / CARDS ======= */
@@ -62,7 +68,7 @@
 }
 
 .produtos h2 {
-  font-size: 28px;
+  font-size: 48px;
   margin-bottom: 20px;
   color: var(--cor-primaria);
 }
@@ -104,6 +110,34 @@
   font-size: 14px;
   opacity: 0.9;
 }
+.botao_cardp{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+}
+.bot{
+  padding: 12px 50px;
+  border-radius: 30px;
+  font-size: 15px;
+  background:  var(--cor-acento);
+  cursor: pointer;
+  margin-left:150px;
+  margin-bottom: 1px;
+  
+}
+.img4 {
+  position: relative;
+  top: 4px;
+  right: 20px;   
+  bottom: 1px;    
+}
+
+.person {
+  width: 150px;
+  margin-left: 220%;
+  margin-top: 20px;
+}
 
 /* ======= HISTÓRIA ======= */
 .historia {
@@ -116,7 +150,7 @@
 }
 
 .historia h2 {
-  font-size: 50px;
+  font-size: 48px;
   margin-bottom: 15px;
   
 }
@@ -133,6 +167,7 @@ margin-left: 10%;
 
 }
 
+
 /* ======= SOBRE NÓS ======= */
 .sobre-nos{
   text-align: center;
@@ -140,8 +175,9 @@ margin-left: 10%;
 }
 
 .sobre-nos h2 {
-  font-size: 28px;
-}
+  font-size: 48px;
+  color: var(--cor-primaria);
+  }
 
 .sobre-nos p {
   font-size: 15px;
@@ -205,9 +241,11 @@ margin-left: 10%;
 }
 
  .venha {
-  font-size: 28px;
+  font-size: 38px;
   margin-bottom: 20px;
   text-align:  left;
+  color:#ffedd3; ;
+  
 }
 
 .Contato h3 {
@@ -216,11 +254,22 @@ margin-left: 10%;
   color: #c6d955;
 }
 .Contato p {
-  color: var(--cor-secundaroa);
+ 
+  color: #ffedd3;;
+}
+ .icons_visita {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icons_visita img {
+  width: 26px;
+  height: 26px;
 }
 iframe {
   margin-top: 20px;
   border-radius: 12px;
   height: 350px 100px;
-margin-left: 80%;
+  margin-left: 70%;
 }
