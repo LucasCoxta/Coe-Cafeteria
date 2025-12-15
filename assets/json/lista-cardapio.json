@@ -134,49 +134,31 @@
       "nome": "Pão de Queijo",
       "descricao": "Tradicional pão de queijo mineiro.",
       "preco": "6.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/pao-de-queijo.webp"
     },
     {
       "nome": "Misto Quente",
       "descricao": "Pão com queijo e presunto quentinho.",
       "preco": "10.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/misto-quente.webp"
     },
     {
       "nome": "Croissant",
       "descricao": "Croissant amanteigado e macio.",
       "preco": "8.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Bauru",
-      "descricao": "Sanduíche clássico com queijo, presunto e tomate.",
-      "preco": "12.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Torrada com Manteiga",
-      "descricao": "Pão tostado com manteiga.",
-      "preco": "5.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/croissant.webp"
     },
     {
       "nome": "Empada de Frango",
       "descricao": "Empadinha cremosa de frango.",
       "preco": "7.50",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Quiche de Alho-Poró",
-      "descricao": "Quiche leve e saborosa.",
-      "preco": "11.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/empada.webp"
     },
     {
       "nome": "Sanduíche Natural",
       "descricao": "Peito de peru, alface e cenoura.",
       "preco": "10.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/sanduiche-natural.webp"
     }
   ],
 
@@ -185,49 +167,37 @@
       "nome": "Bolo de Chocolate",
       "descricao": "Fatia de bolo macio com chocolate.",
       "preco": "9.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/bolo-chocolate.webp"
     },
     {
       "nome": "Brownie",
       "descricao": "Brownie denso e chocolatoso.",
       "preco": "8.50",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/brownie.webp"
     },
     {
       "nome": "Cookie",
       "descricao": "Cookie crocante com gotas de chocolate.",
       "preco": "6.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cookie.webp"
     },
     {
       "nome": "Torta de Limão",
       "descricao": "Torta refrescante e cremosa.",
       "preco": "10.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Pudim",
-      "descricao": "Pudim tradicional de leite condensado.",
-      "preco": "8.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/torta-limao.webp"
     },
     {
       "nome": "Cheesecake",
       "descricao": "Cheesecake com calda de frutas vermelhas.",
       "preco": "12.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cheesecake.webp"
     },
     {
       "nome": "Torta de Maçã",
       "descricao": "Clássica torta de maçã assada.",
       "preco": "10.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Gelato",
-      "descricao": "Sorvete italiano artesanal.",
-      "preco": "9.50",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/torta-maca.webp"
     }
   ]
 }
