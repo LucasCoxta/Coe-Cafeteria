@@ -1,3 +1,4 @@
+/* HERO */
 .hero {
   text-align: center;
   margin: 40px 0;
@@ -5,17 +6,10 @@
 }
 
 .hero h1 {
-  font-size: 48px;
-  font-family: Allroundgothic;
-  font-weight: 600;
+  font: 600 48px/1.1 Allroundgothic;
   color: var(--cor-primaria);
-  line-height: 1.1;
   display: flex;
   flex-direction: column;
-}
-
-.hero h1 span {
-  display: block;
 }
 
 .hero .subtext {
@@ -25,10 +19,11 @@
   opacity: 0.75;
 }
 
+/* CARDS PRINCIPAIS */
 .cards-container {
   display: flex;
-  gap: 30px;
   justify-content: center;
+  gap: 30px;
   padding: 40px 20px;
 }
 
@@ -36,58 +31,19 @@
   position: relative;
   width: 350px;
   height: 400px;
-  border: 2px solid transparent;
   border-radius: 20px;
   overflow: hidden;
-  transition: border 0.3s ease;
   cursor: pointer;
-}
-
-.card.active {
-  border-color: var(--cor-acento);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-}
-
-.cardPO-btn {
-  position: absolute;
-  bottom: 20px;
-  left: 47%;
-  transform: translateX(-50%) translateY(20px);
-  opacity: 0;
-  pointer-events: auto;
-  z-index: 10;
-
-  background: #fafafa;
-  color: var(--cor-primaria);
-  border: none;
-  padding: 12px 22px;
-  border-radius: 12px;
-  width: 288px;
-  height: 39px;
-  font-weight: 600;
-  font-size: 15px;
-
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-
-  transition: all 0.3s ease;
-}
-
-.card.active .cardPO-btn {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-  pointer-events: auto;
-  border-color: var(--cor-acento);
-}
-
-.card.active .card-content {
-  transform: translateY(-50px);
+  transition: transform 0.3s;
 }
 
 .card:hover {
   transform: scale(1.03);
+}
+
+.card.active {
+  outline: 5px solid var(--cor-acento);
+  outline-offset: -2px;
 }
 
 .card img {
@@ -96,7 +52,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
 }
 
 .card::before {
@@ -104,7 +59,7 @@
   position: absolute;
   inset: 0;
   background: rgba(20, 18, 18, 0.45);
-  z-index: 2;
+  z-index: 1;
 }
 
 .card-content {
@@ -113,82 +68,88 @@
   left: 20px;
   right: 20px;
   color: var(--cor-secundaria);
-  z-index: 3;
-  transition: transform 0.35s ease, opacity 0.35s ease;
+  z-index: 2;
+  transition: transform 0.35s;
 }
 
-.icon {
-  font-size: 26px;
-  margin-bottom: 10px;
+.card.active .card-content {
+  transform: translateY(-50px);
 }
 
 .card-content h3 {
-  font-size: 26px;
-  font-weight: 700;
-  font-family: Allroundgothic;
+  font: 700 26px Allroundgothic;
 }
 
 .card-content p {
+  color: #fafafa;
   font-size: 16px;
   opacity: 0.9;
-  color: var(--cor-secundaria);
 }
 
-.btn-whatsapp {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--cor-secundaria);
-  color: var(--cor-primaria);
-  padding: 12px 18px;
-  border-radius: 12px;
-  text-decoration: none;
-  margin-top: 20px;
-  font-weight: 600;
-}
-
-.btn-whatsapp .arrow {
-  font-size: 20px;
-}
-
-.pedido-container {
+/* BOTÃO CARD */
+.cardPO-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 288px;
+  height: 39px;
+  opacity: 0;
   background: #fafafa;
+  color: var(--cor-primaria);
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+.card.active .cardPO-btn {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+/* PEDIDO */
+.pedido-container {
+  max-width: 1080px;
   padding: 40px;
+  background: #fafafa;
   border-radius: 20px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-  max-width: 1080px;
-  margin: auto;
   text-align: center;
+  margin: 0 auto;
 }
 
 .pedido-container h2 {
-  font-family: Allroundgothic;
-  font-size: 28px;
-  font-weight: 600;
+  font: 600 28px Allroundgothic;
   color: var(--cor-primaria);
 }
 
 .pedido-container p {
+  margin-bottom: 30px;
   font-size: 15px;
   color: #6e857c;
-  margin-bottom: 30px;
 }
 
 .pedido-cards {
   display: flex;
-  gap: 30px;
   justify-content: center;
+  gap: 30px;
 }
 
 .pedido-card {
   display: flex;
   align-items: center;
-  padding: 18px 22px;
   width: 340px;
-  background: #fafafa;
+  padding: 18px 22px;
   border-radius: 16px;
+  background: #fafafa;
   cursor: pointer;
-  transition: 0.25s ease;
+  transition: 0.25s;
 }
 
 .pedido-card:hover {
@@ -196,32 +157,28 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.pedido-card.ifood {
-  background: #eee4e2;
+.pedido-card.whatsapp {
+  background-color: #f3f4e7;
 }
 
+.pedido-card.ifood {
+  background-color: #eee4e2;
+}
+
+/* ICONS */
 .icon-box {
-  width: 75px;
-  height: 75px;
+  width: 56px;
+  height: 56px;
+  margin-right: 18px;
   border-radius: 14px;
   background: var(--cor-acento);
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-right: 18px;
+  justify-content: center;
 }
 
 .pedido-card.ifood .icon-box {
   background: #e34848;
-}
-
-.whatsapp {
-  background-color: #f3f4e7;
-}
-
-.icon-box {
-  width: 50px;
-  height: 50px;
 }
 
 .icon-box i {
@@ -229,8 +186,8 @@
   color: #fafafa;
 }
 
+/* INFO */
 .info h3 {
-  text-align: start;
   font-size: 20px;
   color: var(--cor-primaria);
 }
@@ -243,7 +200,6 @@
 .arrow {
   margin-left: auto;
   font-size: 26px;
-  color: var(--cor-primaria);
   transition: 0.25s;
 }
 
@@ -251,10 +207,11 @@
   transform: translateX(5px);
 }
 
+/* INFO SECTION */
 .info-section {
-  background: var(--cor-primaria);
-  padding: 60px 20px;
   margin-top: 3rem;
+  padding: 60px 20px;
+  background: var(--cor-primaria);
   text-align: center;
 }
 
@@ -266,13 +223,12 @@
 }
 
 .info-card {
-  background: #f6ead2;
   width: 300px;
   padding: 25px 20px;
   border-radius: 16px;
-  text-align: center;
+  background: var(--cor-secundaria);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .info-card:hover {
@@ -282,165 +238,82 @@
 .info-icon {
   width: 70px;
   height: 70px;
-  background: var(--cor-secundaria);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto 15px;
+  border-radius: 50%;
+  background: var(--cor-primaria);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .info-icon i {
   font-size: 32px;
-  color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 }
 
 .info-card h3 {
   font-size: 20px;
-  color: var(--cor-primaria);
 }
 
 .info-card p {
-  color: #4d5b52;
   font-size: 14px;
+  color: #4d5b52;
 }
 
 .prep-time {
   margin-top: 35px;
-  color: var(--cor-secundaria);
-  opacity: 0.75;
   font-size: 14px;
+  opacity: 0.75;
 }
 
+/* RESPONSIVO */
 @media (max-width: 1024px) {
   .hero h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
-
-  .cards-container {
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-
-  .card {
-    width: 300px;
-    height: 360px;
-  }
-
+  .cards-container,
   .pedido-cards {
     flex-wrap: wrap;
-    gap: 20px;
   }
-
-  .pedido-card {
-    width: 100%;
-    max-width: 420px;
+  .card {
+    width: 320px;
+    height: 360px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .hero {
-    margin: 30px 0;
+    margin: 0;
   }
 
   .hero h1 {
-    font-size: 32px;
-    line-height: 1.2;
+    font-size: 30px;
+    margin-top: 6rem;
   }
-
-  .hero .subtext {
-    font-size: 16px;
-  }
-
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 16px;
-  }
-
   .card {
     width: 100%;
     max-width: 360px;
     height: 380px;
   }
-
-  .pedido-container {
-    padding: 30px 20px;
+  .card:hover {
+    transform: none;
   }
-
-  .pedido-container h2 {
-    font-size: 24px;
-  }
-
   .pedido-cards {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .pedido-card {
-    width: 100%;
-    max-width: 360px;
-  }
-
-  .icon-box {
-    width: 65px;
-    height: 65px;
-  }
-
-  .icon-box img {
-    width: 42px;
-    height: 42px;
-  }
-
-  .info-cards {
-    gap: 20px;
-  }
-
-  .info-card {
-    width: 100%;
-    max-width: 340px;
   }
 }
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
-
-  .hero .subtext {
-    font-size: 15px;
-  }
-
   .card {
-    height: 340px;
+    height: 330px;
   }
-
   .card-content h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
-
   .card-content p {
     font-size: 14px;
-  }
-
-  .btn-whatsapp {
-    padding: 10px 14px;
-    font-size: 14px;
-  }
-
-  .pedido-container h2 {
-    font-size: 22px;
-  }
-
-  .pedido-container p {
-    font-size: 14px;
-  }
-
-  .info-card h3 {
-    font-size: 18px;
-  }
-
-  .info-card p {
-    font-size: 13px;
   }
 }
