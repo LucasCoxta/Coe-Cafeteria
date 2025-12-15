@@ -6,7 +6,7 @@
 .titulo-contato h1 {
   font-size: 36px;
   font-weight: 700;
-  color: #003522;
+  color: var(--cor-primaria);
 }
 
 .titulo-contato p {
@@ -28,7 +28,7 @@
 /* ==== FORMULÁRIO ==== */
 
 .card-contatos {
-  background: #fff;
+  background: #fafafa;
   border-radius: 16px;
   padding: 25px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
@@ -41,14 +41,14 @@
 .formulario h2 {
   font-size: 20px;
   margin-bottom: 20px;
-  color: #003522;
+  color: var(--cor-primaria);
 }
 
 .formulario label {
   font-size: 14px;
   display: block;
   margin: 10px 0 5px;
-  color: #003522;
+  color: var(--cor-primaria);
 }
 
 .formulario input,
@@ -64,7 +64,7 @@
 
 .formulario input:focus,
 .formulario textarea:focus {
-  border-color: #003522;
+  border-color: var(--cor-primaria);
 }
 
 .formulario textarea {
@@ -76,7 +76,7 @@
   width: 100%;
   margin-top: 15px;
   padding: 12px;
-  background-color: #003522;
+  background-color: var(--cor-primaria);
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -111,7 +111,7 @@
   color: #003522;
 }
 
-.social-icons {
+.socialCont-icons {
   display: flex;
   gap: 15px;
   margin-top: 10px;
