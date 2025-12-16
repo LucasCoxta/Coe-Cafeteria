@@ -22,4 +22,37 @@ export function initpedido() {
       console.log("Botão clicado");
     }
   });
+
+  //Fazer pedidos na parte dos cards, cafés e Bebidas etc...
+  document.querySelectorAll(".cardPO-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const numero = btn.dataset.whats;
+      const produto = btn.dataset.produto;
+
+      const mensagem = `Olá! Gostaria de fazer um pedido de ${produto}. Pode me ajudar?`;
+
+      const mensagemCodificada = encodeURIComponent(mensagem);
+
+      window.open(
+        `https://wa.me/${numero}?text=${mensagemCodificada}`,
+        "_blank"
+      );
+    });
+  });
+
+  //Fazer pedido pelo WhatsApp.
+  document.querySelectorAll(".pedido-card.whatsapp").forEach((card) => {
+    card.addEventListener("click", () => {
+      const numero = card.dataset.whats;
+
+      const mensagem = "Olá! Gostaria de fazer um pedido";
+
+      const mensagemCodificada = encodeURIComponent(mensagem);
+
+      window.open(
+        `https://wa.me/${numero}?text=${mensagemCodificada}`,
+        "_blank"
+      );
+    });
+  });
 }
