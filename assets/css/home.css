@@ -1,6 +1,7 @@
 .paragrafo1 {
-  padding: 80px 60px;
+  padding: 80px 220px;
   display: flex;
+  justify-content: center;
 }
 
 .paragrafo1 h1 {
@@ -8,7 +9,7 @@
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 10px;
-  color: #0b2f22;
+  color: var(--cor-primaria);
 }
 
 .paragrafo1 p {
@@ -17,17 +18,15 @@
   color: #3d4b42;
 }
 
-.cotoes{
+.cotoes {
   display: flex;
   gap: 15px;
   margin-bottom: 40px;
   flex-direction: column;
 }
-.cotoes img{
- width:504px;
- height: auto;
-
-
+.cotoes img {
+  width: 504px;
+  height: auto;
 }
 
 .btn-beje,
@@ -39,47 +38,42 @@
   font-weight: 600;
   cursor: pointer;
   border: none;
-
 }
 
 .btn-beje {
   background: transparent;
-  border: 2px solid 
+  border: 2px solid;
 }
 
 .btn-beje:hover {
-  background:var(--cor-secundaroa)
- 
-
+  background: var(--cor-secundaria);
 }
 
 .btn-verde {
-  color: #fff;
-  background: #c6d955;
+  color: #fafafa;
+  background: var(--cor-acento);
 }
 
 .btn-verde:hover {
-  background: #b4c74a;
-  
+  opacity: 0.85;
 }
 .Grup-persona {
   position: relative;
   right: 30px;
   bottom: 40px;
-  
 }
 
 .Grup-persona img {
   width: 500px;
   margin-left: 30px;
 }
-.btn-verde a{
+.btn-verde a {
   text-decoration: none;
-  color:var(--cor-primaria);
+  color: var(--cor-primaria);
 }
 .btn-beje a {
   text-decoration: none;
-  color:var(--cor-primaria) 
+  color: var(--cor-primaria);
 }
 
 /* ======= PRODUTOS / CARDS ======= */
@@ -95,7 +89,7 @@
   color: var(--cor-primaria);
 }
 .produtos p {
-  color: var(--cor-secundaroa);
+  color: var(--cor-secundaria);
 }
 
 .cards {
@@ -103,7 +97,6 @@
   gap: 25px;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .card {
@@ -132,22 +125,21 @@
   font-size: 14px;
   opacity: 0.9;
 }
-.botao_cardp{
-  display:flex;
+.botao_cardp {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -70px;
 }
 .bots {
   margin-left: 150px;
-
 }
 
 .img4 {
   position: relative;
   top: 4px;
-  right: 20px;   
-  bottom: 1px;    
+  right: 20px;
+  bottom: 1px;
 }
 
 .person {
@@ -159,35 +151,31 @@
 /* ======= HISTÓRIA ======= */
 .historia {
   display: flex;
-  background: #0b2f22;
-  padding: 60px 50px;
-  color: #ffedd3;
-  
-  
+  background: var(--cor-primaria);
+  width: 100vw;
+  padding: 60px 220px;
+  color: var(--cor-secundaria);
 }
 
 .historia h2 {
   font-family: Allroundgothic;
   font-size: 48px;
   margin-bottom: 15px;
-  
 }
 
 .historia p {
   max-width: 600px;
   margin-bottom: 12px;
-  color: var(--cor-secundaroa);
- font-size: 20px;
+  color: var(--cor-secundaria);
+  font-size: 20px;
 }
-.Group img{
-width: 590px;
-margin-left: 10%;
-
+.Group img {
+  width: 590px;
+  margin-left: 10%;
 }
-
 
 /* ======= SOBRE NÓS ======= */
-.sobre-nos{
+.sobre-nos {
   text-align: center;
   padding: 40px 20px;
 }
@@ -196,7 +184,7 @@ margin-left: 10%;
   font-family: Allroundgothic;
   font-size: 48px;
   color: var(--cor-primaria);
-  }
+}
 
 .sobre-nos p {
   font-size: 15px;
@@ -205,16 +193,16 @@ margin-left: 10%;
 .cards-container {
   display: flex;
   gap: 20px;
-  }
-  .card-comentario {
-  background: #fff;
+}
+.card-comentario {
+  background: #fafafa;
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform .2s ease;
-  }
-  .card-comentario:hover {
+  transition: transform 0.2s ease;
+}
+.card-comentario:hover {
   transform: translateY(-5px);
 }
 
@@ -255,29 +243,27 @@ margin-left: 10%;
 .Contato {
   display: flex;
   background: var(--cor-primaria);
-  padding: 30px 50px;
-  color: #fff;
+  padding: 30px 220px;
+  color: #fafafa;
 }
 
- .venha {
+.venha {
   font-family: Allroundgothic;
   font-size: 38px;
   margin-bottom: 20px;
-  text-align:  left;
-  color:#ffedd3; ;
-  
+  text-align: left;
+  color: var(--cor-secundaria);
 }
 
 .Contato h3 {
   margin-top: 15px;
   margin-bottom: 5px;
-  color: #c6d955;
+  color: var(--cor-acento);
 }
 .Contato p {
- 
-  color: #ffedd3;;
+  color: var(--cor-secundaria);
 }
- .icons_visita {
+.icons_visita {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -293,69 +279,123 @@ iframe {
   height: 350px 100px;
   margin-left: 70%;
 }
-@media (max-width: 1200px) {
 
+/* ======= RESPONSIVO ======= */
+
+/* Tablets */
+@media (max-width: 1024px) {
   .paragrafo1 {
-    padding: 60px 40px;
-  }
-
-  .paragrafo1 h1 {
-    font-size: 40px;
-  }
-
-  .Grup-persona img {
-    width: 420px;
-    max-width: 480px; 
-    display: none;
-    
-  }
-  .card_img {
-    display:none ;
-  }
-
-  .person {
-    margin-left: 160%;
-  }
-
-  .Group img {
-    width: 480px;
-  }
-
-  iframe {
-    margin-left: 40%;
-  }
-}
-@media (max-width: 992px) {
-
-  /* HERO */
-  .paragrafo1 {
+    padding: 20px 40px 10px 40px;
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .cotoes {
-    justify-content: center;
+  .cotoes img {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
   }
 
   .Grup-persona {
     position: static;
+    margin-bottom: 16px;
+    order: -1;
   }
 
   .Grup-persona img {
-    width: 350px;
+    width: 420px;
     margin: 0;
   }
 
-  /* PRODUTOS */
+  .person {
+    margin-left: 110%;
+  }
+
+  .historia {
+    padding: 50px 40px;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Group img {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .card_img {
+    display: none;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Contato {
+    padding: 40px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Contato h3 {
+    justify-content: center;
+  }
+
+  iframe {
+    margin-left: 0;
+    width: 90vw;
+    height: 300px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .paragrafo1 {
+    margin-top: 90px;
+  }
+
+  .Grup-persona img {
+    width: 320px;
+  }
+  .paragrafo1 h1,
+  .produtos h2,
+  .historia h2,
+  .sobre-nos h2 {
+    font-size: 34px;
+  }
+
+  .paragrafo1 p,
+  .historia p {
+    font-size: 16px;
+  }
+
+  .btn-beje,
+  .btn-verde {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .btn-beje {
+    margin-bottom: 0.5rem;
+  }
+
   .cards {
     gap: 20px;
   }
 
-  /* BOTÃO CARDÁPIO */
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
   .botao_cardp {
-    flex-direction: column;
-    margin-top: 0;
+    margin-top: 20px;
+    margin-bottom: 2rem;
   }
 
   .bots {
@@ -363,99 +403,31 @@ iframe {
   }
 
   .person {
-    margin-left: 0;
-    width: 120px;
-  }
-
-  /* HISTÓRIA */
-  .historia {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .Group img {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  /* COMENTÁRIOS */
-  .cards-container {
-    flex-direction: column;
-  }
-
-  /* CONTATO */
-  .Contato {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  iframe {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-@media (max-width: 600px) {
-
-  /* HERO */
-  .paragrafo1 {
-    padding: 40px 20px;
-  }
-
-  .paragrafo1 h1 {
-    font-size: 20px;
-  }
-
-  .paragrafo1 p {
-    font-size: 14px;
-  }
- 
-
-  .cotoes {
-    flex-direction: column;
-  }
-
-  .btn-beje,
-  .btn-verde {
-    width: 100%;
-    text-align: center;
-  }
-
-  .Grup-persona img {
-    width: 100%;
-  }
-
-  /* PRODUTOS */
-  .produtos h2 {
-    font-size: 32px;
-  }
-
-  /* BOTÃO CARDÁPIO */
-  .person {
     display: none;
   }
 
-  /* HISTÓRIA */
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .venha {
+    text-align: center;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .paragrafo1 {
+    padding: 60px 20px 0 20px;
+  }
+
+  .paragrafo1 h1 {
+    font-size: 28px;
+  }
+
   .historia {
     padding: 40px 20px;
-  }
-
-  .historia h2 {
-    font-size: 32px;
-  }
-
-  .historia p {
-    font-size: 16px;
-  }
-
-  /* SOBRE NÓS */
-  .sobre-nos h2 {
-    font-size: 32px;
-  }
-
-  /* CONTATO */
-  .Contato {
-    padding: 30px 20px;
   }
 
   .venha {
@@ -463,9 +435,6 @@ iframe {
   }
 
   iframe {
-    height: 280px;
+    height: 260px;
   }
 }
-
-
-
