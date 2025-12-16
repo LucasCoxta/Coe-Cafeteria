@@ -1,5 +1,3 @@
-import { addToCart } from "./carrinho.js";
-
 let dadosCardapio = {};
 
 export function initCardapio() {
@@ -40,32 +38,20 @@ export function initCardapio() {
           <div class="info-cardapio">
             <h3>${item.nome}</h3>
             <p>${item.descricao}</p>
-              <span class="preco-cardapio">R$ ${item.preco}</span>
-              <button
-                class="btn-add-cart"
-                data-id="${id}"
-                data-nome="${item.nome}"
-                data-preco="${item.preco}"
-                data-img="${item.imagem}"
-              >
-                Fazer pedido <i class="fa-solid fa-plus"></i>
-              </button>
+            <span class="preco-cardapio">R$ ${item.preco}</span>
+
+            <button
+              class="btn-add-cart"
+              data-id="${id}"
+              data-nome="${item.nome}"
+              data-preco="${item.preco}"
+              data-img="${item.imagem}"
+            >
+              Fazer pedido <i class="fa-solid fa-plus"></i>
+            </button>
           </div>
         </div>
       `;
-    });
-
-    document.querySelectorAll(".btn-add-cart").forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        const el = e.currentTarget;
-
-        addToCart({
-          id: el.dataset.id,
-          nome: el.dataset.nome,
-          preco: Number(el.dataset.preco),
-          imagem: el.dataset.img,
-        });
-      });
     });
   }
 }

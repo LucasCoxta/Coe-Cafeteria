@@ -1,7 +1,13 @@
+// =======================
+// ESTADO DO CARRINHO
+// =======================
 let cart = JSON.parse(localStorage.getItem("coe_cart_v1")) || [];
 
 const CART_EVENT = "cart:update";
 
+// =======================
+// UTILIDADES
+// =======================
 function formatPrice(value) {
   return Number(value).toLocaleString("pt-BR", {
     minimumFractionDigits: 2,
@@ -17,50 +23,33 @@ function calcTotal() {
   return cart.reduce((total, item) => total + item.preco * item.qtd, 0);
 }
 
+// =======================
+// BADGE
+// =======================
 function animateBadge(badge) {
   badge.classList.remove("bump");
   void badge.offsetWidth;
   badge.classList.add("bump");
-
-  setTimeout(() => {
-    badge.classList.remove("bump");
-  }, 250);
+  setTimeout(() => badge.classList.remove("bump"), 250);
 }
 
 function updateBadge() {
   const total = cart.reduce((s, i) => s + i.qtd, 0);
 
-  const badgeMobile = document.getElementById("cartCount");
-  const badgeDesktop = document.getElementById("cartCountDesktop");
-
-  [badgeMobile, badgeDesktop].forEach((badge) => {
+  ["cartCount", "cartCountDesktop"].forEach((id) => {
+    const badge = document.getElementById(id);
     if (!badge) return;
 
     badge.textContent = total;
-    badge.setAttribute("data-count", total);
     badge.style.display = total > 0 ? "flex" : "none";
 
     if (total > 0) animateBadge(badge);
   });
-
-  if (badgeMobile) {
-    badgeMobile.textContent = total;
-    badgeMobile.setAttribute("data-count", total);
-    badgeMobile.style.display = total > 0 ? "flex" : "none";
-  }
-
-  if (badgeDesktop) {
-    badgeDesktop.textContent = total;
-    badgeDesktop.setAttribute("data-count", total);
-    badgeDesktop.style.display = total > 0 ? "flex" : "none";
-  }
-
-  document.querySelectorAll(".cart-wrapper").forEach((w) => {
-    w.classList.add("pulse");
-    setTimeout(() => w.classList.remove("pulse"), 300);
-  });
 }
 
+// =======================
+// RENDER DO CARRINHO
+// =======================
 function renderCart() {
   const itemsContainer = document.getElementById("cartItems");
   const totalEl = document.getElementById("cartTotal");
@@ -81,18 +70,17 @@ function renderCart() {
           </div>
 
           <div class="cart-actions">
-            <button data-dec="${item.id}" class="icon-btn">
-              <i class="fa-solid fa-minus"></i>
+            <button class="icon-btn" data-dec="${item.id}">
+            <i class="fa-solid fa-minus"></i>
             </button>
 
             <span class="cart-qty">${item.qtd}</span>
 
-            <button data-inc="${item.id}" class="icon-btn">
-              <i class="fa-solid fa-plus"></i>
+            <button class="icon-btn" data-inc="${item.id}">
+            <i class="fa-solid fa-plus"></i>
             </button>
-
-            <button data-remove="${item.id}" class="icon-btn remove">
-              <i class="fa-solid fa-trash"></i>
+            <button class="icon-btn remove" data-remove="${item.id}">
+            <i class="fa-solid fa-trash"></i>
             </button>
           </div>
         </div>
@@ -104,6 +92,9 @@ function renderCart() {
   updateBadge();
 }
 
+// =======================
+// MODAL
+// =======================
 function openCart() {
   document.getElementById("cartOverlay")?.classList.add("active");
   document.body.style.overflow = "hidden";
@@ -114,47 +105,100 @@ function closeCart() {
   document.body.style.overflow = "";
 }
 
+// =======================
+// ADD AO CARRINHO
+// =======================
 export function addToCart(produto) {
   const exists = cart.find((i) => i.id === produto.id);
 
   if (exists) {
-    exists.qtd += 1;
+    exists.qtd++;
   } else {
     cart.push({ ...produto, qtd: 1 });
   }
 
   saveCart();
   renderCart();
-
   document.dispatchEvent(new CustomEvent(CART_EVENT));
 }
 
+// =======================
+// AÇÕES (+ - REMOVER)
+// =======================
 function handleActions(e) {
-  const button = e.target.closest("button");
-  if (!button) return;
+  const btn = e.target.closest("button");
+  if (!btn) return;
 
-  const id = button.dataset.inc || button.dataset.dec || button.dataset.remove;
+  const id = btn.dataset.inc || btn.dataset.dec || btn.dataset.remove;
   if (!id) return;
 
   const item = cart.find((i) => i.id === id);
   if (!item) return;
 
-  if (button.dataset.inc) {
-    item.qtd++;
-  }
-
-  if (button.dataset.dec) {
-    item.qtd = Math.max(1, item.qtd - 1);
-  }
-
-  if (button.dataset.remove) {
-    cart = cart.filter((i) => i.id !== id);
-  }
+  if (btn.dataset.inc) item.qtd++;
+  if (btn.dataset.dec) item.qtd = Math.max(1, item.qtd - 1);
+  if (btn.dataset.remove) cart = cart.filter((i) => i.id !== id);
 
   saveCart();
   renderCart();
 }
 
+// =======================
+// WHATSAPP
+// =======================
+function generateWhatsAppMessage() {
+  if (cart.length === 0) return "Olá! Gostaria de fazer um pedido";
+
+  let msg = "*Pedido da Cafeteria*\n\n";
+
+  cart.forEach((item) => {
+    msg += `• ${item.nome} (${item.qtd}x)\n`;
+    msg += `  R$ ${formatPrice(item.preco * item.qtd)}\n\n`;
+  });
+
+  msg += `*Total:* R$ ${formatPrice(calcTotal())}\n\n`;
+  msg += "Pode confirmar, por favor?";
+
+  return msg;
+}
+
+function sendOrderToWhatsApp() {
+  const phone = "5599999999999"; // ALTERE AQUI
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(
+    generateWhatsAppMessage()
+  )}`;
+  window.open(url, "_blank");
+}
+
+// =======================
+// LISTENER GLOBAL ADD CART
+// =======================
+let addToCartListenerInitialized = false;
+
+function initAddToCartGlobal() {
+  if (addToCartListenerInitialized) return;
+  addToCartListenerInitialized = true;
+
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".btn-add-cart");
+    if (!btn) return;
+
+    const produto = {
+      id: btn.dataset.id,
+      nome: btn.dataset.nome,
+      preco: Number(btn.dataset.preco),
+      imagem: btn.dataset.img,
+    };
+
+    if (!produto.id || !produto.nome || !produto.preco) return;
+
+    addToCart(produto);
+  });
+}
+
+// =======================
+// INIT
+// =======================
 export function initCarrinho() {
   document.getElementById("closeCart")?.addEventListener("click", closeCart);
 
@@ -170,9 +214,11 @@ export function initCarrinho() {
     btn.addEventListener("click", openCart);
   });
 
-  document.addEventListener(CART_EVENT, () => {
-    renderCart();
-  });
+  document
+    .getElementById("whatsappOrder")
+    ?.addEventListener("click", sendOrderToWhatsApp);
+
+  initAddToCartGlobal();
 
   renderCart();
   updateBadge();

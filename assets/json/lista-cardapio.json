@@ -16,7 +16,7 @@
       "nome": "Irish Coffee",
       "descricao": "Café com um toque de whisky e creme.",
       "preco": "18.00",
-      "imagem": "../img/cardapio/irish-Coffee.webp"
+      "imagem": "../img/cardapio/Irish-Coffee.webp"
     },
     {
       "nome": "Café Caramelo Salgado",
@@ -128,7 +128,7 @@
       "nome": "Croissant",
       "descricao": "Croissant amanteigado e macio.",
       "preco": "8.00",
-      "imagem": "../img/cardapio/croissant.webp"
+      "imagem": "../img/cardapio/Croissant.webp"
     },
     {
       "nome": "Empada de Frango",
