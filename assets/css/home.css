@@ -4,6 +4,7 @@
 }
 
 .paragrafo1 h1 {
+  font-family: Allroundgothic;
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 10px;
@@ -16,38 +17,50 @@
   color: #3d4b42;
 }
 
-.cotoes {
+.cotoes{
   display: flex;
   gap: 15px;
   margin-bottom: 40px;
+  flex-direction: column;
+}
+.cotoes img{
+ width:504px;
+ height: auto;
+
+
 }
 
 .btn-beje,
 .btn-verde {
+  max-width: 300px;
   padding: 12px 25px;
   border-radius: 30px;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   border: none;
+
 }
 
 .btn-beje {
   background: transparent;
-  border: 2px solid var(--cor-primaria);
+  border: 2px solid 
 }
 
 .btn-beje:hover {
-  background: #0b2f22;
-  color: #fff;
+  background:var(--cor-secundaroa)
+ 
+
 }
 
 .btn-verde {
+  color: #fff;
   background: #c6d955;
 }
 
 .btn-verde:hover {
   background: #b4c74a;
+  
 }
 .Grup-persona {
   position: relative;
@@ -60,6 +73,14 @@
   width: 500px;
   margin-left: 30px;
 }
+.btn-verde a{
+  text-decoration: none;
+  color:var(--cor-primaria);
+}
+.btn-beje a {
+  text-decoration: none;
+  color:var(--cor-primaria) 
+}
 
 /* ======= PRODUTOS / CARDS ======= */
 .produtos {
@@ -68,6 +89,7 @@
 }
 
 .produtos h2 {
+  font-family: Allroundgothic;
   font-size: 48px;
   margin-bottom: 20px;
   color: var(--cor-primaria);
@@ -116,16 +138,11 @@
   align-items: center;
   margin-top: -70px;
 }
-.bot{
-  padding: 12px 50px;
-  border-radius: 30px;
-  font-size: 15px;
-  background:  var(--cor-acento);
-  cursor: pointer;
-  margin-left:150px;
-  margin-bottom: 1px;
-  
+.bots {
+  margin-left: 150px;
+
 }
+
 .img4 {
   position: relative;
   top: 4px;
@@ -150,6 +167,7 @@
 }
 
 .historia h2 {
+  font-family: Allroundgothic;
   font-size: 48px;
   margin-bottom: 15px;
   
@@ -175,6 +193,7 @@ margin-left: 10%;
 }
 
 .sobre-nos h2 {
+  font-family: Allroundgothic;
   font-size: 48px;
   color: var(--cor-primaria);
   }
@@ -241,6 +260,7 @@ margin-left: 10%;
 }
 
  .venha {
+  font-family: Allroundgothic;
   font-size: 38px;
   margin-bottom: 20px;
   text-align:  left;
@@ -273,3 +293,179 @@ iframe {
   height: 350px 100px;
   margin-left: 70%;
 }
+@media (max-width: 1200px) {
+
+  .paragrafo1 {
+    padding: 60px 40px;
+  }
+
+  .paragrafo1 h1 {
+    font-size: 40px;
+  }
+
+  .Grup-persona img {
+    width: 420px;
+    max-width: 480px; 
+    display: none;
+    
+  }
+  .card_img {
+    display:none ;
+  }
+
+  .person {
+    margin-left: 160%;
+  }
+
+  .Group img {
+    width: 480px;
+  }
+
+  iframe {
+    margin-left: 40%;
+  }
+}
+@media (max-width: 992px) {
+
+  /* HERO */
+  .paragrafo1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cotoes {
+    justify-content: center;
+  }
+
+  .Grup-persona {
+    position: static;
+  }
+
+  .Grup-persona img {
+    width: 350px;
+    margin: 0;
+  }
+
+  /* PRODUTOS */
+  .cards {
+    gap: 20px;
+  }
+
+  /* BOTÃO CARDÁPIO */
+  .botao_cardp {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .bots {
+    margin-left: 0;
+  }
+
+  .person {
+    margin-left: 0;
+    width: 120px;
+  }
+
+  /* HISTÓRIA */
+  .historia {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .Group img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* COMENTÁRIOS */
+  .cards-container {
+    flex-direction: column;
+  }
+
+  /* CONTATO */
+  .Contato {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  iframe {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 600px) {
+
+  /* HERO */
+  .paragrafo1 {
+    padding: 40px 20px;
+  }
+
+  .paragrafo1 h1 {
+    font-size: 20px;
+  }
+
+  .paragrafo1 p {
+    font-size: 14px;
+  }
+ 
+
+  .cotoes {
+    flex-direction: column;
+  }
+
+  .btn-beje,
+  .btn-verde {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Grup-persona img {
+    width: 100%;
+  }
+
+  /* PRODUTOS */
+  .produtos h2 {
+    font-size: 32px;
+  }
+
+  /* BOTÃO CARDÁPIO */
+  .person {
+    display: none;
+  }
+
+  /* HISTÓRIA */
+  .historia {
+    padding: 40px 20px;
+  }
+
+  .historia h2 {
+    font-size: 32px;
+  }
+
+  .historia p {
+    font-size: 16px;
+  }
+
+  /* SOBRE NÓS */
+  .sobre-nos h2 {
+    font-size: 32px;
+  }
+
+  /* CONTATO */
+  .Contato {
+    padding: 30px 20px;
+  }
+
+  .venha {
+    font-size: 28px;
+  }
+
+  iframe {
+    height: 280px;
+  }
+}
+
+
+
