@@ -146,7 +146,17 @@
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .sobre-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .sobre-container {
+    margin-top: 90px;
+  }
+
   .sobre-container h1 {
     font-size: 28px;
   }
