@@ -5,6 +5,7 @@
     <title>Contato - Coe Cafeteria</title>
     <script src="../js/scripts.js" defer type="module"></script>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/favicon.svg" type="image/svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -86,23 +87,46 @@
     <!-- CONTAINER PRINCIPAL -->
     <section class="container">
       <!-- FORMULÁRIO -->
-      <div class="card-contatos formulario">
+      <form
+        class="card-contatos formulario"
+        action="https://formsubmit.co/coecafe@gmail.com"
+        method="POST"
+      >
         <h2>Deixe sua Sugestão</h2>
 
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nova sugestão enviada pelo site"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
         <label>Nome *</label>
-        <input type="text" placeholder="Seu nome" />
+        <input type="text" name="nome" placeholder="Seu nome" required />
 
         <label>E-mail *</label>
-        <input type="email" placeholder="Seu e-mail" />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
 
         <label>Tipo de Sugestão *</label>
-        <input type="text" placeholder="Ex.: Atendimento, Produto, Ambiente" />
+        <input
+          type="text"
+          name="tipo_sugestao"
+          placeholder="Ex.: Atendimento, Produto, Ambiente"
+          required
+        />
 
         <label>Sua Sugestão *</label>
-        <textarea placeholder="Escreva aqui..."></textarea>
+        <textarea
+          name="mensagem"
+          placeholder="Escreva aqui..."
+          required
+        ></textarea>
 
-        <button class="btn-enviar">Enviar Sugestão</button>
-      </div>
+        <input type="text" name="_honey" style="display: none" />
+
+        <button type="submit" class="btn-enviar">Enviar Sugestão</button>
+      </form>
 
       <!-- CARD INFORMAÇÕES -->
       <div class="infos">
@@ -179,10 +203,10 @@
 
         <div class="footer-coll">
           <h3>Links Rápidos</h3>
-          <a href="..//..//index.html">Início</a>
-          <a href="..//pages/cardapio.html">Cardápio</a>
-          <a href="../pages/sobre.html">Sobre Nós</a>
-          <a href="..//pages/pedido.html">Pedidos Online</a>
+          <a href="/index.html">Início</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a href="sobre.html">Sobre Nós</a>
+          <a href="pedido.html">Pedidos Online</a>
         </div>
 
         <div class="footer-coll">
