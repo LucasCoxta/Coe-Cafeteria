@@ -95,37 +95,19 @@
       "nome": "Chá de Camomila",
       "descricao": "Chá suave de camomila.",
       "preco": "7.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cha-camomila.webp"
     },
     {
       "nome": "Chá de Hortelã",
       "descricao": "Chá refrescante de hortelã.",
       "preco": "7.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Chá de Frutas Vermelhas",
-      "descricao": "Infusão aromática de frutas.",
-      "preco": "10.00",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Chá de Gengibre",
-      "descricao": "Chá quente com sabor intenso.",
-      "preco": "9.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cha-hortela.webp"
     },
     {
       "nome": "Chá de Maçã",
       "descricao": "Infusão de maçã doce e suave.",
       "preco": "8.50",
-      "imagem": "https://via.placeholder.com/150"
-    },
-    {
-      "nome": "Chá de Capim-Limão",
-      "descricao": "Chá aromático e relaxante.",
-      "preco": "8.00",
-      "imagem": "https://via.placeholder.com/150"
+      "imagem": "../img/cardapio/cha-de-maca.webp"
     }
   ],
 
